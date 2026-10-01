@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Funerária Recanto da Paz</title>
+<meta name="description" content="Funerária familiar em São Paulo desde 1987. Plantão 24 horas, planos com preço claro, velório, cremação e traslado.">
+<meta property="og:title" content="Funerária Recanto da Paz">
+<meta property="og:description" content="Estamos com você desde o primeiro telefonema. Plantão 24 horas.">
+<meta property="og:image" content="img/ipe-estrada.jpg">
+<meta name="theme-color" content="#1e211f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg fill='%23e3b23c'%3E%3Ccircle cx='16' cy='9' r='6'/%3E%3Ccircle cx='22.7' cy='13.8' r='6'/%3E%3Ccircle cx='20.1' cy='21.7' r='6'/%3E%3Ccircle cx='11.9' cy='21.7' r='6'/%3E%3Ccircle cx='9.3' cy='13.8' r='6'/%3E%3C/g%3E%3Ccircle cx='16' cy='16' r='3' fill='%231e211f'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+<!--
+  DADOS PARA EDITAR (todos fictícios): nome, telefone, WhatsApp (5511943821947 nos links wa.me),
+  endereço, CNPJ, e-mail, ano de fundação, história e preços dos planos.
+-->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FuneralHome",
+  "name": "Funerária Recanto da Paz",
+  "telephone": "+55-11-4382-1947",
+  "openingHours": "Mo-Su 00:00-23:59",
+  "foundingDate": "1987",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua das Acácias, 418",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "postalCode": "01234-567",
+    "addressCountry": "BR"
+  }
+}
+</script>
+
+<style>
+/*
+  Marca: Ipê.
+  Grafite + cinza-pedra, um único acento amarelo-ipê.
+  Formas: imagens-chave em arco (portal, passagem); todo o resto com raio de 4px.
+*/
+:root {
+  --bg: #eeeeea;
+  --surface: #f7f7f4;
+  --ink: #1e211f;
+  --muted: #555a56;
+  --line: #d4d4cd;
+  --ipe: #e3b23c;
+  --ipe-text: #7a5800;
+  --ipe-soft: #f3e3b8;
+  --block: #1e211f;
+  --block-ink: #ecebe6;
+  --block-muted: #b3b6b1;
+  --shadow: 0 24px 48px -28px rgba(30, 33, 31, .45);
+  --r: 4px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141614;
+    --surface: #1b1e1b;
+    --ink: #ecebe6;
+    --muted: #a9ada8;
+    --line: #2d312d;
+    --ipe: #e8b949;
+    --ipe-text: #e8b949;
+    --ipe-soft: #3a3220;
+    --block: #20241f;
+    --block-ink: #ecebe6;
+    --block-muted: #a9ada8;
+    --shadow: 0 24px 48px -28px rgba(0, 0, 0, .7);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141614;
+  --surface: #1b1e1b;
+  --ink: #ecebe6;
+  --muted: #a9ada8;
+  --line: #2d312d;
+  --ipe: #e8b949;
+  --ipe-text: #e8b949;
+  --ipe-soft: #3a3220;
+  --block: #20241f;
+  --block-ink: #ecebe6;
+  --block-muted: #a9ada8;
+  --shadow: 0 24px 48px -28px rgba(0, 0, 0, .7);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Hanken Grotesk", system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+h1, h2, h3 {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  text-wrap: balance;
+}
+h2 { font-size: clamp(2.1rem, 4.4vw, 3.4rem); }
+h3 { font-size: 1.3rem; letter-spacing: -0.01em; line-height: 1.2; }
+p { color: var(--muted); text-wrap: pretty; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
+@media (min-width: 768px) { .wrap { padding: 0 40px; } }
+section { padding: 96px 0 104px; }
+@media (max-width: 767px) { section { padding: 64px 0 72px; } }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: var(--bg); padding: .6rem 1rem; z-index: 50; border-radius: var(--r); }
+.skip:focus { left: 8px; }
+:focus-visible { outline: 3px solid var(--ipe); outline-offset: 3px; }
+
+/* Botões */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .55rem;
+  padding: .9rem 1.35rem; border-radius: var(--r);
+  font: 600 1rem/1 "Hanken Grotesk", sans-serif;
+  text-decoration: none; white-space: nowrap; border: 1.5px solid transparent; cursor: pointer;
+  transition: transform .2s cubic-bezier(.16,1,.3,1), background-color .2s, border-color .2s, color .2s;
+}
+.btn i { font-size: 1.2rem; }
+.btn:active { transform: translateY(1px) scale(.98); }
+.btn-ipe { background: var(--ipe); color: #1e211f; }
+.btn-ipe:hover { background: #edc25a; }
+.btn-ink { background: var(--ink); color: var(--bg); }
+.btn-ink:hover { opacity: .9; }
+.btn-line { border-color: currentColor; color: inherit; background: transparent; }
+.btn-line:hover { background: color-mix(in srgb, currentColor 8%, transparent); }
+
+/* Marca */
+.brand { display: inline-flex; align-items: center; gap: .6rem; text-decoration: none; }
+.brand svg { width: 30px; height: 30px; flex-shrink: 0; }
+.brand-name { font-family: "Bricolage Grotesque", sans-serif; font-weight: 600; font-size: 1.2rem; letter-spacing: -0.02em; line-height: 1; }
+.brand-name span { display: block; font-family: "Hanken Grotesk", sans-serif; font-weight: 500; font-size: .72rem; letter-spacing: .02em; color: var(--muted); margin-top: .25rem; }
+
+/* Navegação */
+header {
+  position: sticky; top: 0; z-index: 20;
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.nav { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 1.5rem; }
+.nav-links { display: none; gap: 1.6rem; list-style: none; }
+.nav-links a { text-decoration: none; color: var(--muted); font-weight: 500; font-size: .95rem; transition: color .2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--ink); }
+.nav-cta { display: none; }
+@media (min-width: 1080px) { .nav-links { display: flex; } .nav-cta { display: inline-flex; } }
+.menu-btn {
+  width: 44px; height: 44px; border-radius: var(--r); border: 1.5px solid var(--line);
+  background: transparent; color: var(--ink); font-size: 1.3rem; display: grid; place-items: center; cursor: pointer;
+}
+@media (min-width: 1080px) { .menu-btn { display: none; } }
+.mobile-menu { display: none; padding: 4px 0 20px; }
+.mobile-menu.open { display: block; }
+.mobile-menu a { display: block; padding: 12px 0; text-decoration: none; font-size: 1.1rem; font-weight: 500; }
+.mobile-menu .btn { margin-top: 10px; width: 100%; }
+
+/* Hero */
+.hero { padding: 56px 0 96px; }
+.hero-grid { display: grid; gap: 48px; }
+@media (min-width: 960px) {
+  .hero { padding: 56px 0 104px; }
+  .hero-grid { grid-template-columns: 1.15fr .85fr; gap: 72px; align-items: end; }
+}
+.hero h1 { font-size: clamp(2.5rem, 4.3vw, 3.75rem); max-width: 17ch; }
+.hero-sub { font-size: 1.15rem; max-width: 46ch; margin-top: 1.4rem; }
+.ways { margin-top: 2.2rem; max-width: 600px; }
+.ways-label { font-size: .95rem; font-weight: 600; color: var(--ink); margin-bottom: .8rem; }
+.way {
+  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 1rem;
+  padding: 1rem 1.25rem; text-decoration: none;
+  border-top: 1px solid var(--line);
+  transition: background-color .25s, padding .25s cubic-bezier(.16,1,.3,1);
+}
+.way:last-child { border-bottom: 1px solid var(--line); }
+.way strong { display: block; font-family: "Bricolage Grotesque", sans-serif; font-weight: 500; font-size: 1.35rem; letter-spacing: -0.015em; line-height: 1.2; }
+.way span { font-size: .95rem; color: var(--muted); }
+.way i { font-size: 1.4rem; transition: transform .25s cubic-bezier(.16,1,.3,1); }
+.way:hover { background: var(--surface); }
+.way:hover i { transform: translateX(4px); }
+.way.urgent { background: var(--ipe); border-color: var(--ipe); border-radius: var(--r); color: #1e211f; }
+.way.urgent span { color: #3d3a2c; }
+.way.urgent:hover { background: #edc25a; }
+.hero-media { position: relative; }
+.arch {
+  border-radius: 999px 999px var(--r) var(--r); overflow: hidden;
+  aspect-ratio: 5 / 7; box-shadow: var(--shadow); background: var(--line);
+}
+.arch img { width: 100%; height: 100%; object-fit: cover; }
+.hero-media .arch { max-width: 460px; margin-left: auto; }
+@media (max-width: 959px) { .hero-media .arch { aspect-ratio: 4 / 3.4; max-width: none; border-radius: 280px 280px var(--r) var(--r); } }
+.hero-badge {
+  position: absolute; left: 0; bottom: 32px;
+  background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow);
+  padding: .9rem 1.1rem; display: flex; gap: .75rem; align-items: center;
+}
+.hero-badge i { font-size: 1.6rem; color: var(--ipe-text); }
+.hero-badge strong { display: block; font-size: 1rem; line-height: 1.2; }
+.hero-badge span { font-size: .88rem; color: var(--muted); }
+@media (max-width: 959px) { .hero-badge { left: 12px; bottom: 12px; } }
+
+/* Agora (bloco grafite) */
+.now { background: var(--block); color: var(--block-ink); }
+.now h2 { max-width: 16ch; }
+.now .intro { color: var(--block-muted); font-size: 1.1rem; max-width: 52ch; margin-top: 1rem; }
+.steps { list-style: none; display: grid; gap: 40px; margin-top: 56px; counter-reset: s; }
+@media (min-width: 720px) { .steps { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1080px) { .steps { grid-template-columns: repeat(4, 1fr); gap: 32px; } }
+.steps li { counter-increment: s; border-top: 1px solid color-mix(in srgb, var(--block-ink) 18%, transparent); padding-top: 1.4rem; }
+.steps li::before {
+  content: counter(s); display: block;
+  font-family: "Bricolage Grotesque", sans-serif; font-size: 3.2rem; font-weight: 500; line-height: 1;
+  color: var(--ipe); margin-bottom: 1rem;
+}
+.steps h3 { color: var(--block-ink); margin-bottom: .5rem; }
+.steps p { color: var(--block-muted); font-size: .98rem; }
+.now-ctas { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 56px; }
+
+/* História */
+.story-head { max-width: 900px; }
+.story-head p { font-family: "Bricolage Grotesque", sans-serif; font-size: clamp(1.4rem, 2.6vw, 2rem); line-height: 1.3; letter-spacing: -0.015em; color: var(--ink); margin-top: 1.6rem; }
+.story-grid { display: grid; gap: 48px; margin-top: 64px; }
+@media (min-width: 960px) { .story-grid { grid-template-columns: 1.3fr 1fr; gap: 72px; align-items: start; } }
+.story-photo { border-radius: var(--r); overflow: hidden; aspect-ratio: 4 / 3; }
+.story-photo img { width: 100%; height: 100%; object-fit: cover; }
+.milestones { list-style: none; display: grid; gap: 2rem; }
+.milestones li { display: grid; grid-template-columns: 84px 1fr; gap: 1.2rem; }
+.milestones .year { font-family: "Bricolage Grotesque", sans-serif; font-size: 1.6rem; font-weight: 500; letter-spacing: -0.02em; line-height: 1.15; color: var(--ipe-text); }
+.milestones strong { display: block; font-size: 1.05rem; margin-bottom: .15rem; }
+.why-ipe {
+  margin-top: 2.6rem; padding: 1.6rem; border-radius: var(--r);
+  background: var(--ipe-soft); display: grid; grid-template-columns: auto 1fr; gap: 1.1rem; align-items: start;
+}
+.why-ipe svg { width: 40px; height: 40px; }
+.why-ipe strong { display: block; margin-bottom: .3rem; }
+.why-ipe p { color: var(--ink); opacity: .85; font-size: .98rem; }
+
+/* Serviços */
+.services { background: var(--surface); }
+.services-grid { display: grid; gap: 48px; }
+@media (min-width: 960px) { .services-grid { grid-template-columns: .8fr 1.2fr; gap: 80px; } .services-aside { position: sticky; top: 112px; align-self: start; } }
+.services-aside p { margin-top: 1.2rem; max-width: 38ch; font-size: 1.08rem; }
+.services-aside .arch { aspect-ratio: 1 / 1; max-width: 260px; margin-top: 2.4rem; box-shadow: none; }
+@media (max-width: 959px) { .services-aside .arch { display: none; } }
+.service-list { list-style: none; display: grid; gap: 0; }
+@media (min-width: 640px) { .service-list { grid-template-columns: 1fr 1fr; column-gap: 40px; } }
+.service-list li { padding: 1.8rem 0; display: grid; grid-template-columns: 48px 1fr; gap: 1rem; }
+.service-list i {
+  width: 48px; height: 48px; border-radius: var(--r); background: var(--ipe-soft); color: var(--ipe-text);
+  display: grid; place-items: center; font-size: 1.5rem;
+}
+.service-list h3 { margin-bottom: .35rem; }
+.service-list p { font-size: .98rem; }
+
+/* Planos */
+.plans-head p { margin-top: 1.1rem; max-width: 56ch; font-size: 1.1rem; }
+.table-wrap { margin-top: 56px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.plans { width: 100%; min-width: 720px; border-collapse: separate; border-spacing: 0; font-size: .98rem; }
+.plans th, .plans td { padding: 1rem 1.1rem; text-align: left; vertical-align: middle; }
+.plans thead th { vertical-align: bottom; padding-top: 1.6rem; padding-bottom: 1.4rem; }
+.plans tbody tr + tr td, .plans tbody tr + tr th { border-top: 1px solid var(--line); }
+.plans tbody th { font-weight: 500; color: var(--muted); width: 34%; }
+.plans td { text-align: center; }
+.plans .featured { background: var(--ipe-soft); }
+.plans thead .featured { border-radius: var(--r) var(--r) 0 0; }
+.plans tfoot .featured { border-radius: 0 0 var(--r) var(--r); }
+.plan-name { font-family: "Bricolage Grotesque", sans-serif; font-size: 1.5rem; font-weight: 500; letter-spacing: -0.02em; display: block; color: var(--ink); }
+.plan-who { display: block; font-size: .9rem; font-weight: 400; color: var(--muted); margin-top: .2rem; }
+.plan-price { display: block; margin-top: 1rem; font-family: "Bricolage Grotesque", sans-serif; font-size: 2.2rem; font-weight: 500; letter-spacing: -0.03em; line-height: 1; color: var(--ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.plan-price small { font-family: "Hanken Grotesk", sans-serif; font-size: .9rem; font-weight: 500; letter-spacing: 0; color: var(--muted); }
+.plan-flag { display: inline-block; font-size: .8rem; font-weight: 600; background: var(--ipe); color: #1e211f; padding: .2rem .55rem; border-radius: var(--r); margin-bottom: .7rem; }
+.plans thead th:not(:first-child), .plans tfoot td { text-align: center; }
+.plans td i.yes { color: var(--ipe-text); font-size: 1.3rem; }
+.plans td i.no { color: var(--line); font-size: 1.1rem; }
+.plans td .val { font-weight: 600; color: var(--ink); }
+.plans tfoot td { padding-top: 1.6rem; padding-bottom: 1.6rem; }
+.plans tfoot .btn { width: 100%; }
+.plans-note { margin-top: 24px; font-size: .92rem; }
+.scroll-hint { display: none; font-size: .88rem; margin-top: 12px; }
+@media (max-width: 760px) {
+  .scroll-hint { display: block; }
+  .plans { min-width: 640px; font-size: .92rem; }
+  .plans th, .plans td { padding: .85rem .7rem; }
+  .plans tbody th, .plans thead th:first-child, .plans tfoot td:first-child {
+    position: sticky; left: 0; z-index: 1; background: var(--bg); width: 120px; min-width: 120px;
+    box-shadow: 8px 0 12px -10px rgba(30, 33, 31, .35);
+  }
+  .plan-price { font-size: 1.7rem; }
+}
+
+/* Dúvidas */
+.faq h2 { max-width: 14ch; }
+.faq-grid { display: grid; gap: 40px 64px; margin-top: 56px; }
+@media (min-width: 820px) { .faq-grid { grid-template-columns: 1fr 1fr; } }
+.faq-item h3 { font-family: "Hanken Grotesk", sans-serif; font-weight: 600; font-size: 1.12rem; letter-spacing: 0; margin-bottom: .5rem; }
+.faq-item p { max-width: 56ch; }
+.faq-more { margin-top: 56px; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; padding-top: 32px; border-top: 1px solid var(--line); }
+.faq-more p { color: var(--ink); font-weight: 500; }
+
+/* Endereço */
+.visit { padding-bottom: 0; }
+.visit-map { position: relative; margin-top: 48px; }
+.map { height: 520px; border-radius: var(--r) var(--r) 0 0; overflow: hidden; background: var(--surface); }
+.map iframe { width: 100%; height: 100%; border: 0; display: block; filter: grayscale(.55) contrast(1.05); }
+.visit-card {
+  background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow);
+  padding: 32px; display: grid; gap: 1.5rem;
+}
+@media (min-width: 900px) {
+  .visit-card { position: absolute; top: 40px; left: 40px; width: 380px; }
+}
+@media (max-width: 899px) { .visit-card { margin: -64px 12px 0; position: relative; } .map { height: 360px; } }
+.visit-card dt { font-size: .85rem; font-weight: 600; color: var(--muted); margin-bottom: .2rem; }
+.visit-card dd { font-size: 1.02rem; }
+.visit-card dd a { text-decoration: none; font-weight: 600; }
+.visit-card dd a:hover { text-decoration: underline; }
+.visit-card .btn { justify-self: start; }
+
+/* Rodapé */
+footer { background: var(--block); color: var(--block-ink); padding: 64px 0 40px; margin-top: 0; }
+.foot-grid { display: grid; gap: 32px; }
+@media (min-width: 860px) { .foot-grid { grid-template-columns: 1.4fr 1fr 1fr; } }
+footer .brand-name span { color: var(--block-muted); }
+footer p, footer li { color: var(--block-muted); font-size: .95rem; }
+footer ul { list-style: none; display: grid; gap: .4rem; }
+footer a { text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+.foot-title { color: var(--block-ink); font-weight: 600; margin-bottom: .7rem; font-size: .95rem; }
+.credits { margin-top: 48px; padding-top: 24px; border-top: 1px solid color-mix(in srgb, var(--block-ink) 14%, transparent); font-size: .82rem; color: var(--block-muted); display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem 2rem; }
+
+/* WhatsApp flutuante */
+.wa {
+  position: fixed; right: 16px; bottom: 16px; z-index: 30;
+  display: inline-flex; align-items: center; gap: .55rem;
+  background: var(--ink); color: var(--bg);
+  padding: .85rem 1.15rem .85rem .95rem; border-radius: 999px;
+  text-decoration: none; font-weight: 600; box-shadow: var(--shadow);
+  transition: transform .25s cubic-bezier(.16,1,.3,1);
+}
+.wa i { font-size: 1.6rem; color: #25d366; }
+.wa:hover { transform: translateY(-2px); }
+.wa:active { transform: scale(.97); }
+@media (max-width: 520px) { .wa span { display: none; } .wa { padding: .9rem; } }
+
+/* Movimento: só entrada suave do conteúdo; nada em loop */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal { opacity: 0; transform: translateY(20px); transition: opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  .hero-text > * { animation: rise .9s cubic-bezier(.16,1,.3,1) both; }
+  .hero-text > *:nth-child(2) { animation-delay: .07s; }
+  .hero-text > *:nth-child(3) { animation-delay: .14s; }
+  .hero-media .arch img { animation: settle 1.6s cubic-bezier(.16,1,.3,1) both; }
+  .hero-badge { animation: rise .9s .35s cubic-bezier(.16,1,.3,1) both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px); } }
+  @keyframes settle { from { transform: scale(1.08); } }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ipe" viewBox="0 0 32 32">
+    <g fill="#e3b23c"><circle cx="16" cy="9" r="6"/><circle cx="22.7" cy="13.8" r="6"/><circle cx="20.1" cy="21.7" r="6"/><circle cx="11.9" cy="21.7" r="6"/><circle cx="9.3" cy="13.8" r="6"/></g>
+    <circle cx="16" cy="16" r="3" fill="#1e211f"/>
+  </symbol>
+</svg>
+
+<header>
+  <div class="wrap">
+    <nav class="nav" aria-label="Principal">
+      <a class="brand" href="#inicio">
+        <svg aria-hidden="true"><use href="#ipe"/></svg>
+        <span class="brand-name">Recanto da Paz<span>Funerária desde 1987</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#agora">Primeiros passos</a></li>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+        <li><a href="#endereco">Endereço</a></li>
+      </ul>
+      <a class="btn btn-ink nav-cta" href="tel:+551143821947"><i class="ph ph-phone"></i>Plantão 24h</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu"><i class="ph ph-list"></i></button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#agora">Primeiros passos</a>
+      <a href="#historia">História</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#planos">Planos</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#endereco">Endereço</a>
+      <a class="btn btn-ink" href="tel:+551143821947"><i class="ph ph-phone"></i>Plantão 24h: (11) 4382-1947</a>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <h1>Estamos com você desde o primeiro telefonema.</h1>
+        <p class="hero-sub">Funerária familiar em São Paulo desde 1987. Plantão 24 horas, preço claro e cuidado em cada detalhe.</p>
+        <nav class="ways" aria-label="Como podemos ajudar">
+          <p class="ways-label">Como podemos ajudar?</p>
+          <a class="way urgent" href="#agora">
+            <div><strong>Perdi alguém agora</strong><span>Veja o que fazer e fale com o plantão</span></div>
+            <i class="ph ph-arrow-right"></i>
+          </a>
+          <a class="way" href="#planos">
+            <div><strong>Quero me planejar</strong><span>Planos a partir de R$ 39,90 por mês</span></div>
+            <i class="ph ph-arrow-right"></i>
+          </a>
+          <a class="way" href="#endereco">
+            <div><strong>Procuro um velório</strong><span>Endereço, salas e como chegar</span></div>
+            <i class="ph ph-arrow-right"></i>
+          </a>
+        </nav>
+      </div>
+      <div class="hero-media">
+        <div class="arch">
+          <img src="img/ipe-estrada.jpg" alt="Ipê-amarelo florido à beira de uma estrada de terra no interior paulista" width="1280" height="1796" fetchpriority="high">
+        </div>
+        <div class="hero-badge">
+          <i class="ph ph-clock"></i>
+          <div><strong>Atendemos agora</strong><span>24 horas, todos os dias</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="now" id="agora">
+    <div class="wrap">
+      <h2 class="reveal">Perdeu alguém agora? Siga estes passos.</h2>
+      <p class="intro reveal">Sabemos que este momento é difícil. Você não precisa resolver nada sozinho: nossa equipe acompanha cada etapa.</p>
+      <ol class="steps">
+        <li class="reveal">
+          <h3>Ligue para o plantão</h3>
+          <p>Atendemos 24 horas pelo (11) 4382-1947 ou pelo WhatsApp. Explicamos tudo com calma.</p>
+        </li>
+        <li class="reveal">
+          <h3>Peça a declaração de óbito</h3>
+          <p>No hospital, o médico emite. Em casa, chame o médico da família ou o SVO. Ajudamos nisso.</p>
+        </li>
+        <li class="reveal">
+          <h3>Separe os documentos</h3>
+          <p>RG e CPF da pessoa falecida e certidão de nascimento ou casamento.</p>
+        </li>
+        <li class="reveal">
+          <h3>Deixe o resto conosco</h3>
+          <p>Remoção, preparação, velório, cartório e sepultamento ou cremação.</p>
+        </li>
+      </ol>
+      <div class="now-ctas reveal">
+        <a class="btn btn-ipe" href="tel:+551143821947"><i class="ph ph-phone"></i>Ligar agora</a>
+        <a class="btn btn-line" href="https://wa.me/5511943821947?text=Ol%C3%A1%2C%20preciso%20de%20atendimento%20agora." target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo"></i>Chamar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="historia">
+    <div class="wrap">
+      <div class="story-head reveal">
+        <h2>Uma família cuidando de famílias.</h2>
+        <p>Em 1987, Anselmo e Dirce Ribeiro abriram uma pequena sala de velório na Rua das Acácias. A regra da casa era simples: tratar cada pessoa como alguém da própria família. Hoje, os filhos seguem à frente com o mesmo cuidado.</p>
+      </div>
+      <div class="story-grid">
+        <div class="reveal">
+          <div class="story-photo">
+            <img src="img/ipe-ceu.jpg" alt="Copa de um ipê-amarelo coberta de flores contra o céu azul" width="1280" height="960" loading="lazy">
+          </div>
+        </div>
+        <div class="reveal">
+          <ol class="milestones">
+            <li><span class="year">1987</span><div><strong>A primeira sala</strong><p>Uma sala de velório e um carro, no centro de São Paulo.</p></div></li>
+            <li><span class="year">2004</span><div><strong>Casa nova</strong><p>Quatro salas climatizadas, capela ecumênica e estacionamento próprio.</p></div></li>
+            <li><span class="year">2016</span><div><strong>Planos funerários</strong><p>Proteção com preço claro para famílias de toda a região.</p></div></li>
+          </ol>
+          <div class="why-ipe">
+            <svg aria-hidden="true"><use href="#ipe"/></svg>
+            <div>
+              <strong>Por que o ipê?</strong>
+              <p>O ipê-amarelo floresce no fim do inverno, quando tudo parece seco. Para nós, é um lembrete de que quem amamos continua florescendo na memória.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="servicos">
+    <div class="wrap services-grid">
+      <div class="services-aside reveal">
+        <h2>Tudo o que a despedida pede.</h2>
+        <p>Cuidamos da organização para que você possa estar com quem importa.</p>
+        <div class="arch"><img src="img/ipe-flores.jpg" alt="Flores de ipê-amarelo em close" width="1280" height="1280" loading="lazy"></div>
+      </div>
+      <ul class="service-list">
+        <li class="reveal"><i class="ph ph-house-line"></i><div><h3>Velório</h3><p>Salas climatizadas, capela ecumênica, flores naturais e copa com café para a família.</p></div></li>
+        <li class="reveal"><i class="ph ph-flame"></i><div><h3>Cremação</h3><p>Acompanhamento completo e entrega das cinzas em urna escolhida pela família.</p></div></li>
+        <li class="reveal"><i class="ph ph-tree"></i><div><h3>Sepultamento</h3><p>Organização junto aos cemitérios públicos e particulares da cidade.</p></div></li>
+        <li class="reveal"><i class="ph ph-path"></i><div><h3>Traslado</h3><p>Transporte para qualquer cidade do Brasil e para o exterior, com as autorizações necessárias.</p></div></li>
+        <li class="reveal"><i class="ph ph-stamp"></i><div><h3>Documentação</h3><p>Certidão de óbito, liberações e registro em cartório. A família não precisa ir a lugar nenhum.</p></div></li>
+        <li class="reveal"><i class="ph ph-hand-heart"></i><div><h3>Apoio no luto</h3><p>Orientação nas semanas seguintes e indicação de grupos de acolhimento.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="planos">
+    <div class="wrap">
+      <div class="plans-head reveal">
+        <h2>Planos com preço claro.</h2>
+        <p>Sem letra miúda e sem precisar pedir orçamento. Veja abaixo o que cada plano inclui.</p>
+      </div>
+      <div class="table-wrap reveal" tabindex="0" aria-label="Tabela comparativa de planos">
+        <!-- Preços de exemplo: ajuste conforme a tabela real -->
+        <table class="plans">
+          <thead>
+            <tr>
+              <th scope="col"><span class="sr-only" style="position:absolute;left:-9999px">Cobertura</span></th>
+              <th scope="col"><span class="plan-name">Essencial</span><span class="plan-who">Titular e cônjuge</span><span class="plan-price">R$ 39,90<small>/mês</small></span></th>
+              <th scope="col" class="featured"><span class="plan-flag">Mais escolhido</span><span class="plan-name">Família</span><span class="plan-who">Titular e até 6 dependentes</span><span class="plan-price">R$ 69,90<small>/mês</small></span></th>
+              <th scope="col"><span class="plan-name">Completo</span><span class="plan-who">Inclui pais e sogros</span><span class="plan-price">R$ 109,90<small>/mês</small></span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Atendimento 24 horas</th><td><i class="ph-bold ph-check yes" aria-label="Incluso"></i></td><td class="featured"><i class="ph-bold ph-check yes" aria-label="Incluso"></i></td><td><i class="ph-bold ph-check yes" aria-label="Incluso"></i></td></tr>
+            <tr><th scope="row">Velório em sala climatizada</th><td><i class="ph-bold ph-check yes" aria-label="Incluso"></i></td><td class="featured"><i class="ph-bold ph-check yes" aria-label="Incluso"></i></td><td><i class="ph-bold ph-check yes" aria-label="Incluso"></i></td></tr>
+            <tr><th scope="row">Documentação e cartório</th><td><i class="ph-bold ph-check yes" aria-label="Incluso"></i></td><td class="featured"><i class="ph-bold ph-check yes" aria-label="Incluso"></i></td><td><i class="ph-bold ph-check yes" aria-label="Incluso"></i></td></tr>
+            <tr><th scope="row">Remoção</th><td><span class="val">até 100 km</span></td><td class="featured"><span class="val">até 300 km</span></td><td><span class="val">sem limite no Brasil</span></td></tr>
+            <tr><th scope="row">Urna</th><td><span class="val">Padrão</span></td><td class="featured"><span class="val">Especial</span></td><td><span class="val">Especial</span></td></tr>
+            <tr><th scope="row">Coroa de flores</th><td><i class="ph ph-minus no" aria-label="Não incluso"></i></td><td class="featured"><i class="ph-bold ph-check yes" aria-label="Incluso"></i></td><td><i class="ph-bold ph-check yes" aria-label="Incluso"></i></td></tr>
+            <tr><th scope="row">Cremação</th><td><i class="ph ph-minus no" aria-label="Não incluso"></i></td><td class="featured"><i class="ph-bold ph-check yes" aria-label="Incluso"></i></td><td><i class="ph-bold ph-check yes" aria-label="Incluso"></i></td></tr>
+            <tr><th scope="row">Cerimônia personalizada</th><td><i class="ph ph-minus no" aria-label="Não incluso"></i></td><td class="featured"><i class="ph ph-minus no" aria-label="Não incluso"></i></td><td><i class="ph-bold ph-check yes" aria-label="Incluso"></i></td></tr>
+            <tr><th scope="row">Apoio psicológico à família</th><td><i class="ph ph-minus no" aria-label="Não incluso"></i></td><td class="featured"><i class="ph ph-minus no" aria-label="Não incluso"></i></td><td><i class="ph-bold ph-check yes" aria-label="Incluso"></i></td></tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td><a class="btn btn-line" href="https://wa.me/5511943821947?text=Ol%C3%A1%2C%20quero%20contratar%20o%20plano%20Essencial." target="_blank" rel="noopener">Contratar</a></td>
+              <td class="featured"><a class="btn btn-ink" href="https://wa.me/5511943821947?text=Ol%C3%A1%2C%20quero%20contratar%20o%20plano%20Fam%C3%ADlia." target="_blank" rel="noopener">Contratar</a></td>
+              <td><a class="btn btn-line" href="https://wa.me/5511943821947?text=Ol%C3%A1%2C%20quero%20contratar%20o%20plano%20Completo." target="_blank" rel="noopener">Contratar</a></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <p class="scroll-hint">Arraste a tabela para o lado para ver todos os planos.</p>
+      <p class="plans-note">Sem carência para morte acidental. Demais carências e condições estão no contrato de cada plano.</p>
+    </div>
+  </section>
+
+  <section class="faq services" id="duvidas">
+    <div class="wrap">
+      <h2 class="reveal">Perguntas que as famílias fazem.</h2>
+      <div class="faq-grid">
+        <div class="faq-item reveal"><h3>Vocês atendem quem não tem plano?</h3><p>Sim. Atendemos qualquer família, com ou sem plano, e apresentamos as opções e formas de pagamento no primeiro contato.</p></div>
+        <div class="faq-item reveal"><h3>Quanto tempo leva para começar o velório?</h3><p>Em geral, de 4 a 6 horas após a remoção, dependendo da liberação do corpo e da documentação.</p></div>
+        <div class="faq-item reveal"><h3>É possível parcelar o serviço?</h3><p>Sim. Aceitamos Pix, cartões de débito e crédito e parcelamento, conforme o serviço escolhido.</p></div>
+        <div class="faq-item reveal"><h3>Qual é a carência dos planos?</h3><p>Não há carência para morte acidental. Para outras causas, a carência está descrita no contrato de cada plano.</p></div>
+        <div class="faq-item reveal"><h3>Posso escolher entre cremação e sepultamento?</h3><p>Sim. A família decide, e nós cuidamos de todos os trâmites em qualquer uma das opções.</p></div>
+        <div class="faq-item reveal"><h3>Vocês fazem traslado para outras cidades?</h3><p>Sim, para todo o Brasil e para o exterior, por via terrestre ou aérea.</p></div>
+      </div>
+      <div class="faq-more reveal">
+        <p>Ficou alguma dúvida? Respondemos a qualquer hora.</p>
+        <a class="btn btn-ink" href="https://wa.me/5511943821947?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida." target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo"></i>Perguntar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="endereco">
+    <div class="wrap">
+      <h2 class="reveal">Onde estamos.</h2>
+      <div class="visit-map reveal">
+        <div class="map">
+          <iframe title="Mapa com a localização da Funerária Recanto da Paz" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Rua%20das%20Ac%C3%A1cias%2C%20418%2C%20S%C3%A3o%20Paulo%20-%20SP&z=15&output=embed"></iframe>
+        </div>
+        <dl class="visit-card">
+          <div><dt>Endereço</dt><dd>Rua das Acácias, 418, Centro<br>São Paulo - SP, 01234-567</dd></div>
+          <div><dt>Plantão 24 horas</dt><dd><a href="tel:+551143821947">(11) 4382-1947</a></dd></div>
+          <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5511943821947" target="_blank" rel="noopener">(11) 94382-1947</a></dd></div>
+          <div><dt>Estrutura</dt><dd>4 salas de velório, capela ecumênica e estacionamento gratuito.</dd></div>
+          <a class="btn btn-ipe" href="https://www.google.com/maps/dir/?api=1&destination=Rua%20das%20Ac%C3%A1cias%2C%20418%2C%20S%C3%A3o%20Paulo%20-%20SP" target="_blank" rel="noopener"><i class="ph ph-navigation-arrow"></i>Como chegar</a>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#inicio">
+          <svg aria-hidden="true"><use href="#ipe"/></svg>
+          <span class="brand-name">Recanto da Paz<span>Funerária desde 1987</span></span>
+        </a>
+        <p style="margin-top:1rem;max-width:36ch">Rua das Acácias, 418, Centro, São Paulo - SP.<br>CNPJ 00.000.000/0001-00</p>
+      </div>
+      <div>
+        <p class="foot-title">Plantão 24 horas</p>
+        <ul>
+          <li><a href="tel:+551143821947">(11) 4382-1947</a></li>
+          <li><a href="https://wa.me/5511943821947" target="_blank" rel="noopener">WhatsApp (11) 94382-1947</a></li>
+          <li><a href="mailto:contato@recantodapaz.com.br">contato@recantodapaz.com.br</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-title">Navegação</p>
+        <ul>
+          <li><a href="#agora">Primeiros passos</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="credits">
+      <span>© <span id="year">2026</span> Funerária Recanto da Paz</span>
+      <span>Fotos: José Reynaldo da Fonseca (CC BY 2.5), Sudhertzen (CC BY-SA 4.0) e "Under the same moon..." (CC BY 2.0), via Wikimedia Commons.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5511943821947?text=Ol%C3%A1%2C%20preciso%20de%20atendimento." target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+  <i class="ph-fill ph-whatsapp-logo"></i><span>WhatsApp</span>
+</a>
+
+<script>
+  // Menu mobile
+  const btn = document.querySelector('.menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const setMenu = open => {
+    menu.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open);
+    btn.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+    btn.innerHTML = open ? '<i class="ph ph-x"></i>' : '<i class="ph ph-list"></i>';
+  };
+  btn.addEventListener('click', () => setMenu(!menu.classList.contains('open')));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+
+  // Entrada suave ao rolar
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Link ativo na navegação
+  const links = [...document.querySelectorAll('.nav-links a')];
+  const spy = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  document.querySelectorAll('main section[id]').forEach(s => spy.observe(s));
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

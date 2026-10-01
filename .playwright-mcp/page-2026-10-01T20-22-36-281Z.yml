@@ -1,0 +1,353 @@
+- generic [active] [ref=f2e1]:
+  - link "Pular para o conteúdo" [ref=f2e2] [cursor=pointer]:
+    - /url: "#conteudo"
+  - banner [ref=f2e3]:
+    - generic [ref=f2e4]:
+      - navigation "Principal" [ref=f2e5]:
+        - link "Recanto da Paz Funerária desde 1987" [ref=f2e6] [cursor=pointer]:
+          - /url: "#inicio"
+          - generic [ref=f2e9]:
+            - text: Recanto da Paz
+            - generic [ref=f2e10]: Funerária desde 1987
+        - list [ref=f2e11]:
+          - listitem [ref=f2e12]:
+            - link "Primeiros passos" [ref=f2e13] [cursor=pointer]:
+              - /url: "#agora"
+          - listitem [ref=f2e14]:
+            - link "História" [ref=f2e15] [cursor=pointer]:
+              - /url: "#historia"
+          - listitem [ref=f2e16]:
+            - link "Serviços" [ref=f2e17] [cursor=pointer]:
+              - /url: "#servicos"
+          - listitem [ref=f2e18]:
+            - link "Planos" [ref=f2e19] [cursor=pointer]:
+              - /url: "#planos"
+          - listitem [ref=f2e20]:
+            - link "Dúvidas" [ref=f2e21] [cursor=pointer]:
+              - /url: "#duvidas"
+          - listitem [ref=f2e22]:
+            - link "Endereço" [ref=f2e23] [cursor=pointer]:
+              - /url: "#endereco"
+        - link " Plantão 24h" [ref=f2e24] [cursor=pointer]:
+          - /url: tel:+551143821947
+          - generic [ref=f2e25]: 
+          - text: Plantão 24h
+        - text: 
+      - text: 
+  - main [ref=f2e26]:
+    - generic [ref=f2e28]:
+      - generic [ref=f2e29]:
+        - heading "Estamos com você desde o primeiro telefonema." [level=1] [ref=f2e30]
+        - paragraph [ref=f2e31]: Funerária familiar em São Paulo desde 1987. Plantão 24 horas, preço claro e cuidado em cada detalhe.
+        - navigation "Como podemos ajudar" [ref=f2e32]:
+          - paragraph [ref=f2e33]: Como podemos ajudar?
+          - link "Perdi alguém agora Veja o que fazer e fale com o plantão " [ref=f2e34] [cursor=pointer]:
+            - /url: "#agora"
+            - generic [ref=f2e35]:
+              - strong [ref=f2e36]: Perdi alguém agora
+              - text: Veja o que fazer e fale com o plantão
+            - generic [ref=f2e37]: 
+          - link "Quero me planejar Planos a partir de R$ 39,90 por mês " [ref=f2e38] [cursor=pointer]:
+            - /url: "#planos"
+            - generic [ref=f2e39]:
+              - strong [ref=f2e40]: Quero me planejar
+              - text: Planos a partir de R$ 39,90 por mês
+            - generic [ref=f2e41]: 
+          - link "Procuro um velório Endereço, salas e como chegar " [ref=f2e42] [cursor=pointer]:
+            - /url: "#endereco"
+            - generic [ref=f2e43]:
+              - strong [ref=f2e44]: Procuro um velório
+              - text: Endereço, salas e como chegar
+            - generic [ref=f2e45]: 
+      - generic [ref=f2e46]:
+        - img "Ipê-amarelo florido à beira de uma estrada de terra no interior paulista" [ref=f2e48]
+        - generic [ref=f2e49]:
+          - generic [ref=f2e50]: 
+          - generic [ref=f2e51]:
+            - strong [ref=f2e52]: Atendemos agora
+            - text: 24 horas, todos os dias
+    - generic [ref=f2e54]:
+      - heading "Perdeu alguém agora? Siga estes passos." [level=2] [ref=f2e55]
+      - paragraph [ref=f2e56]: "Sabemos que este momento é difícil. Você não precisa resolver nada sozinho: nossa equipe acompanha cada etapa."
+      - list [ref=f2e57]:
+        - listitem [ref=f2e58]:
+          - heading "Ligue para o plantão" [level=3] [ref=f2e59]
+          - paragraph [ref=f2e60]: Atendemos 24 horas pelo (11) 4382-1947 ou pelo WhatsApp. Explicamos tudo com calma.
+        - listitem [ref=f2e61]:
+          - heading "Peça a declaração de óbito" [level=3] [ref=f2e62]
+          - paragraph [ref=f2e63]: No hospital, o médico emite. Em casa, chame o médico da família ou o SVO. Ajudamos nisso.
+        - listitem [ref=f2e64]:
+          - heading "Separe os documentos" [level=3] [ref=f2e65]
+          - paragraph [ref=f2e66]: RG e CPF da pessoa falecida e certidão de nascimento ou casamento.
+        - listitem [ref=f2e67]:
+          - heading "Deixe o resto conosco" [level=3] [ref=f2e68]
+          - paragraph [ref=f2e69]: Remoção, preparação, velório, cartório e sepultamento ou cremação.
+      - generic [ref=f2e70]:
+        - link " Ligar agora" [ref=f2e71] [cursor=pointer]:
+          - /url: tel:+551143821947
+          - generic [ref=f2e72]: 
+          - text: Ligar agora
+        - link " Chamar no WhatsApp" [ref=f2e73] [cursor=pointer]:
+          - /url: https://wa.me/5511943821947?text=Ol%C3%A1%2C%20preciso%20de%20atendimento%20agora.
+          - generic [ref=f2e74]: 
+          - text: Chamar no WhatsApp
+    - generic [ref=f2e76]:
+      - generic [ref=f2e77]:
+        - heading "Uma família cuidando de famílias." [level=2] [ref=f2e78]
+        - paragraph [ref=f2e79]: "Em 1987, Anselmo e Dirce Ribeiro abriram uma pequena sala de velório na Rua das Acácias. A regra da casa era simples: tratar cada pessoa como alguém da própria família. Hoje, os filhos seguem à frente com o mesmo cuidado."
+      - generic [ref=f2e80]:
+        - img "Copa de um ipê-amarelo coberta de flores contra o céu azul" [ref=f2e83]
+        - generic [ref=f2e84]:
+          - list [ref=f2e85]:
+            - listitem [ref=f2e86]:
+              - generic [ref=f2e87]: "1987"
+              - generic [ref=f2e88]:
+                - strong [ref=f2e89]: A primeira sala
+                - paragraph [ref=f2e90]: Uma sala de velório e um carro, no centro de São Paulo.
+            - listitem [ref=f2e91]:
+              - generic [ref=f2e92]: "2004"
+              - generic [ref=f2e93]:
+                - strong [ref=f2e94]: Casa nova
+                - paragraph [ref=f2e95]: Quatro salas climatizadas, capela ecumênica e estacionamento próprio.
+            - listitem [ref=f2e96]:
+              - generic [ref=f2e97]: "2016"
+              - generic [ref=f2e98]:
+                - strong [ref=f2e99]: Planos funerários
+                - paragraph [ref=f2e100]: Proteção com preço claro para famílias de toda a região.
+          - generic [ref=f2e104]:
+            - strong [ref=f2e105]: Por que o ipê?
+            - paragraph [ref=f2e106]: O ipê-amarelo floresce no fim do inverno, quando tudo parece seco. Para nós, é um lembrete de que quem amamos continua florescendo na memória.
+    - generic [ref=f2e108]:
+      - generic [ref=f2e109]:
+        - heading "Tudo o que a despedida pede." [level=2] [ref=f2e110]
+        - paragraph [ref=f2e111]: Cuidamos da organização para que você possa estar com quem importa.
+        - img "Flores de ipê-amarelo em close" [ref=f2e113]
+      - list [ref=f2e114]:
+        - listitem [ref=f2e115]:
+          - generic [ref=f2e116]: 
+          - generic [ref=f2e117]:
+            - heading "Velório" [level=3] [ref=f2e118]
+            - paragraph [ref=f2e119]: Salas climatizadas, capela ecumênica, flores naturais e copa com café para a família.
+        - listitem [ref=f2e120]:
+          - generic [ref=f2e121]: 
+          - generic [ref=f2e122]:
+            - heading "Cremação" [level=3] [ref=f2e123]
+            - paragraph [ref=f2e124]: Acompanhamento completo e entrega das cinzas em urna escolhida pela família.
+        - listitem [ref=f2e125]:
+          - generic [ref=f2e126]: 
+          - generic [ref=f2e127]:
+            - heading "Sepultamento" [level=3] [ref=f2e128]
+            - paragraph [ref=f2e129]: Organização junto aos cemitérios públicos e particulares da cidade.
+        - listitem [ref=f2e130]:
+          - generic [ref=f2e131]: 
+          - generic [ref=f2e132]:
+            - heading "Traslado" [level=3] [ref=f2e133]
+            - paragraph [ref=f2e134]: Transporte para qualquer cidade do Brasil e para o exterior, com as autorizações necessárias.
+        - listitem [ref=f2e135]:
+          - generic [ref=f2e136]: 
+          - generic [ref=f2e137]:
+            - heading "Documentação" [level=3] [ref=f2e138]
+            - paragraph [ref=f2e139]: Certidão de óbito, liberações e registro em cartório. A família não precisa ir a lugar nenhum.
+        - listitem [ref=f2e140]:
+          - generic [ref=f2e141]: 
+          - generic [ref=f2e142]:
+            - heading "Apoio no luto" [level=3] [ref=f2e143]
+            - paragraph [ref=f2e144]: Orientação nas semanas seguintes e indicação de grupos de acolhimento.
+    - generic [ref=f2e146]:
+      - generic [ref=f2e147]:
+        - heading "Planos com preço claro." [level=2] [ref=f2e148]
+        - paragraph [ref=f2e149]: Sem letra miúda e sem precisar pedir orçamento. Veja abaixo o que cada plano inclui.
+      - generic "Tabela comparativa de planos" [ref=f2e150]:
+        - table [ref=f2e151]:
+          - rowgroup [ref=f2e152]:
+            - row [ref=f2e153]:
+              - columnheader "Cobertura" [ref=f2e154]
+              - columnheader "Essencial Titular e cônjuge R$ 39,90/mês" [ref=f2e156]:
+                - generic [ref=f2e157]: Essencial
+                - generic [ref=f2e158]: Titular e cônjuge
+                - generic [ref=f2e159]: R$ 39,90/mês
+              - columnheader "Mais escolhido Família Titular e até 6 dependentes R$ 69,90/mês" [ref=f2e160]:
+                - generic [ref=f2e161]: Mais escolhido
+                - generic [ref=f2e162]: Família
+                - generic [ref=f2e163]: Titular e até 6 dependentes
+                - generic [ref=f2e164]: R$ 69,90/mês
+              - columnheader "Completo Inclui pais e sogros R$ 109,90/mês" [ref=f2e165]:
+                - generic [ref=f2e166]: Completo
+                - generic [ref=f2e167]: Inclui pais e sogros
+                - generic [ref=f2e168]: R$ 109,90/mês
+          - rowgroup [ref=f2e169]:
+            - row [ref=f2e170]:
+              - rowheader "Atendimento 24 horas" [ref=f2e171]
+              - cell "Incluso" [ref=f2e172]:
+                - generic "Incluso" [ref=f2e173]: 
+              - cell "Incluso" [ref=f2e174]:
+                - generic "Incluso" [ref=f2e175]: 
+              - cell "Incluso" [ref=f2e176]:
+                - generic "Incluso" [ref=f2e177]: 
+            - row [ref=f2e178]:
+              - rowheader "Velório em sala climatizada" [ref=f2e179]
+              - cell "Incluso" [ref=f2e180]:
+                - generic "Incluso" [ref=f2e181]: 
+              - cell "Incluso" [ref=f2e182]:
+                - generic "Incluso" [ref=f2e183]: 
+              - cell "Incluso" [ref=f2e184]:
+                - generic "Incluso" [ref=f2e185]: 
+            - row [ref=f2e186]:
+              - rowheader "Documentação e cartório" [ref=f2e187]
+              - cell "Incluso" [ref=f2e188]:
+                - generic "Incluso" [ref=f2e189]: 
+              - cell "Incluso" [ref=f2e190]:
+                - generic "Incluso" [ref=f2e191]: 
+              - cell "Incluso" [ref=f2e192]:
+                - generic "Incluso" [ref=f2e193]: 
+            - row [ref=f2e194]:
+              - rowheader "Remoção" [ref=f2e195]
+              - cell "até 100 km" [ref=f2e196]
+              - cell "até 300 km" [ref=f2e197]
+              - cell "sem limite no Brasil" [ref=f2e198]
+            - row [ref=f2e199]:
+              - rowheader "Urna" [ref=f2e200]
+              - cell "Padrão" [ref=f2e201]
+              - cell "Especial" [ref=f2e202]
+              - cell "Especial" [ref=f2e203]
+            - row [ref=f2e204]:
+              - rowheader "Coroa de flores" [ref=f2e205]
+              - cell "Não incluso" [ref=f2e206]:
+                - generic "Não incluso" [ref=f2e207]: 
+              - cell "Incluso" [ref=f2e208]:
+                - generic "Incluso" [ref=f2e209]: 
+              - cell "Incluso" [ref=f2e210]:
+                - generic "Incluso" [ref=f2e211]: 
+            - row [ref=f2e212]:
+              - rowheader "Cremação" [ref=f2e213]
+              - cell "Não incluso" [ref=f2e214]:
+                - generic "Não incluso" [ref=f2e215]: 
+              - cell "Incluso" [ref=f2e216]:
+                - generic "Incluso" [ref=f2e217]: 
+              - cell "Incluso" [ref=f2e218]:
+                - generic "Incluso" [ref=f2e219]: 
+            - row [ref=f2e220]:
+              - rowheader "Cerimônia personalizada" [ref=f2e221]
+              - cell "Não incluso" [ref=f2e222]:
+                - generic "Não incluso" [ref=f2e223]: 
+              - cell "Não incluso" [ref=f2e224]:
+                - generic "Não incluso" [ref=f2e225]: 
+              - cell "Incluso" [ref=f2e226]:
+                - generic "Incluso" [ref=f2e227]: 
+            - row [ref=f2e228]:
+              - rowheader "Apoio psicológico à família" [ref=f2e229]
+              - cell "Não incluso" [ref=f2e230]:
+                - generic "Não incluso" [ref=f2e231]: 
+              - cell "Não incluso" [ref=f2e232]:
+                - generic "Não incluso" [ref=f2e233]: 
+              - cell "Incluso" [ref=f2e234]:
+                - generic "Incluso" [ref=f2e235]: 
+          - rowgroup [ref=f2e236]:
+            - row [ref=f2e237]:
+              - cell [ref=f2e238]
+              - cell [ref=f2e239]:
+                - link "Contratar" [ref=f2e240] [cursor=pointer]:
+                  - /url: https://wa.me/5511943821947?text=Ol%C3%A1%2C%20quero%20contratar%20o%20plano%20Essencial.
+              - cell [ref=f2e241]:
+                - link "Contratar" [ref=f2e242] [cursor=pointer]:
+                  - /url: https://wa.me/5511943821947?text=Ol%C3%A1%2C%20quero%20contratar%20o%20plano%20Fam%C3%ADlia.
+              - cell [ref=f2e243]:
+                - link "Contratar" [ref=f2e244] [cursor=pointer]:
+                  - /url: https://wa.me/5511943821947?text=Ol%C3%A1%2C%20quero%20contratar%20o%20plano%20Completo.
+      - paragraph [ref=f2e245]: Sem carência para morte acidental. Demais carências e condições estão no contrato de cada plano.
+    - generic [ref=f2e247]:
+      - heading "Perguntas que as famílias fazem." [level=2] [ref=f2e248]
+      - generic [ref=f2e249]:
+        - generic [ref=f2e250]:
+          - heading "Vocês atendem quem não tem plano?" [level=3] [ref=f2e251]
+          - paragraph [ref=f2e252]: Sim. Atendemos qualquer família, com ou sem plano, e apresentamos as opções e formas de pagamento no primeiro contato.
+        - generic [ref=f2e253]:
+          - heading "Quanto tempo leva para começar o velório?" [level=3] [ref=f2e254]
+          - paragraph [ref=f2e255]: Em geral, de 4 a 6 horas após a remoção, dependendo da liberação do corpo e da documentação.
+        - generic [ref=f2e256]:
+          - heading "É possível parcelar o serviço?" [level=3] [ref=f2e257]
+          - paragraph [ref=f2e258]: Sim. Aceitamos Pix, cartões de débito e crédito e parcelamento, conforme o serviço escolhido.
+        - generic [ref=f2e259]:
+          - heading "Qual é a carência dos planos?" [level=3] [ref=f2e260]
+          - paragraph [ref=f2e261]: Não há carência para morte acidental. Para outras causas, a carência está descrita no contrato de cada plano.
+        - generic [ref=f2e262]:
+          - heading "Posso escolher entre cremação e sepultamento?" [level=3] [ref=f2e263]
+          - paragraph [ref=f2e264]: Sim. A família decide, e nós cuidamos de todos os trâmites em qualquer uma das opções.
+        - generic [ref=f2e265]:
+          - heading "Vocês fazem traslado para outras cidades?" [level=3] [ref=f2e266]
+          - paragraph [ref=f2e267]: Sim, para todo o Brasil e para o exterior, por via terrestre ou aérea.
+      - generic [ref=f2e268]:
+        - paragraph [ref=f2e269]: Ficou alguma dúvida? Respondemos a qualquer hora.
+        - link " Perguntar no WhatsApp" [ref=f2e270] [cursor=pointer]:
+          - /url: https://wa.me/5511943821947?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida.
+          - generic [ref=f2e271]: 
+          - text: Perguntar no WhatsApp
+    - generic [ref=f2e273]:
+      - heading "Onde estamos." [level=2] [ref=f2e274]
+      - generic [ref=f2e275]:
+        - iframe [ref=f2e277]
+        - generic [ref=f2e278]:
+          - generic [ref=f2e279]:
+            - term [ref=f2e280]: Endereço
+            - definition [ref=f2e281]: Rua das Acácias, 418, CentroSão Paulo - SP, 01234-567
+          - generic [ref=f2e282]:
+            - term [ref=f2e283]: Plantão 24 horas
+            - definition [ref=f2e284]:
+              - link "(11) 4382-1947" [ref=f2e285] [cursor=pointer]:
+                - /url: tel:+551143821947
+          - generic [ref=f2e286]:
+            - term [ref=f2e287]: WhatsApp
+            - definition [ref=f2e288]:
+              - link "(11) 94382-1947" [ref=f2e289] [cursor=pointer]:
+                - /url: https://wa.me/5511943821947
+          - generic [ref=f2e290]:
+            - term [ref=f2e291]: Estrutura
+            - definition [ref=f2e292]: 4 salas de velório, capela ecumênica e estacionamento gratuito.
+          - link " Como chegar" [ref=f2e293] [cursor=pointer]:
+            - /url: https://www.google.com/maps/dir/?api=1&destination=Rua%20das%20Ac%C3%A1cias%2C%20418%2C%20S%C3%A3o%20Paulo%20-%20SP
+            - generic [ref=f2e294]: 
+            - text: Como chegar
+  - contentinfo [ref=f2e295]:
+    - generic [ref=f2e296]:
+      - generic [ref=f2e297]:
+        - generic [ref=f2e298]:
+          - link "Recanto da Paz Funerária desde 1987" [ref=f2e299] [cursor=pointer]:
+            - /url: "#inicio"
+            - generic [ref=f2e302]:
+              - text: Recanto da Paz
+              - generic [ref=f2e303]: Funerária desde 1987
+          - paragraph [ref=f2e304]: Rua das Acácias, 418, Centro, São Paulo - SP.CNPJ 00.000.000/0001-00
+        - generic [ref=f2e305]:
+          - paragraph [ref=f2e306]: Plantão 24 horas
+          - list [ref=f2e307]:
+            - listitem [ref=f2e308]:
+              - link "(11) 4382-1947" [ref=f2e309] [cursor=pointer]:
+                - /url: tel:+551143821947
+            - listitem [ref=f2e310]:
+              - link "WhatsApp (11) 94382-1947" [ref=f2e311] [cursor=pointer]:
+                - /url: https://wa.me/5511943821947
+            - listitem [ref=f2e312]:
+              - link "contato@recantodapaz.com.br" [ref=f2e313] [cursor=pointer]:
+                - /url: mailto:contato@recantodapaz.com.br
+        - generic [ref=f2e314]:
+          - paragraph [ref=f2e315]: Navegação
+          - list [ref=f2e316]:
+            - listitem [ref=f2e317]:
+              - link "Primeiros passos" [ref=f2e318] [cursor=pointer]:
+                - /url: "#agora"
+            - listitem [ref=f2e319]:
+              - link "Planos" [ref=f2e320] [cursor=pointer]:
+                - /url: "#planos"
+            - listitem [ref=f2e321]:
+              - link "Dúvidas" [ref=f2e322] [cursor=pointer]:
+                - /url: "#duvidas"
+            - listitem [ref=f2e323]:
+              - link "Política de privacidade" [ref=f2e324] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=f2e325]:
+        - generic [ref=f2e326]: © 2026 Funerária Recanto da Paz
+        - generic [ref=f2e327]: "Fotos: José Reynaldo da Fonseca (CC BY 2.5), Sudhertzen (CC BY-SA 4.0) e \"Under the same moon...\" (CC BY 2.0), via Wikimedia Commons."
+  - link "Falar pelo WhatsApp" [ref=f2e328] [cursor=pointer]:
+    - /url: https://wa.me/5511943821947?text=Ol%C3%A1%2C%20preciso%20de%20atendimento.
+    - generic [ref=f2e329]: 
+    - generic [ref=f2e330]: WhatsApp
