@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Grupo Pax Assistência Funeral</title>
+<meta name="description" content="Grupo Pax Assistência Funeral: plantão 24 horas, homenagens, planos para a família e Pax Pet. Homenageando histórias de vidas.">
+<meta property="og:title" content="Grupo Pax Assistência Funeral">
+<meta property="og:description" content="Homenageando histórias de vidas. Plantão 24 horas.">
+<meta property="og:image" content="img/abraco.jpg">
+<meta name="theme-color" content="#142c63">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%23142c63%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-family=%27Georgia,serif%27 font-style=%27italic%27 font-size=%2720%27 text-anchor=%27middle%27 fill=%27%23e2c47e%27%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Pinyon+Script&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+<!--
+  RASCUNHO v3 (Grupo Pax). Itens a confirmar antes de publicar:
+  - Logo: o wordmark abaixo é uma aproximação em fonte (Pinyon Script + pomba). Trocar pelo arquivo oficial (SVG/PNG).
+  - Endereços das unidades (marcados com class="todo").
+  - Preços dos planos e do Pax Pet (valores de exemplo).
+  - História e ano de fundação.
+  Telefones e a nota de falecimento vieram das artes do marketing.
+-->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FuneralHome",
+  "name": "Grupo Pax Assistência Funeral",
+  "slogan": "Homenageando Histórias de Vidas",
+  "telephone": "+55-19-3657-1645",
+  "openingHours": "Mo-Su 00:00-23:59",
+  "address": { "@type": "PostalAddress", "addressLocality": "São José do Rio Pardo", "addressRegion": "SP", "addressCountry": "BR" }
+}
+</script>
+
+<style>
+/*
+  Grupo Pax, v3 (tema claro apenas).
+  Azul profundo + dourado como detalhe; fundo branco-azulado.
+  Formas: botões em pílula, cartões com 14px, fotos em moldura orgânica com filete dourado.
+*/
+:root {
+  --navy: #142c63;
+  --navy-2: #1d3d82;
+  --navy-ink: #0f1f45;
+  --sky: #e9eff9;
+  --sky-2: #d7e3f5;
+  --bg: #f6f8fc;
+  --surface: #fdfdfe;
+  --ink: #16213b;
+  --muted: #4f5b73;
+  --line: #dbe2ee;
+  --gold: #c9a14a;
+  --gold-light: #e2c47e;
+  --gold-text: #87631a;
+  --wa: #1f9d55;
+  --shadow: 0 22px 44px -26px rgba(20, 44, 99, .45);
+  --r: 14px;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: "Nunito Sans", system-ui, sans-serif; font-size: 17px; line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+h1, h2, h3 { font-family: "Playfair Display", Georgia, serif; font-weight: 700; line-height: 1.12; letter-spacing: -0.01em; text-wrap: balance; }
+h2 { font-size: clamp(2rem, 4vw, 3rem); color: var(--navy); }
+h3 { font-size: 1.35rem; }
+p { color: var(--muted); text-wrap: pretty; }
+em { font-style: italic; }
+.wrap { max-width: 1220px; margin: 0 auto; padding: 0 16px; }
+@media (min-width: 768px) { .wrap { padding: 0 40px; } }
+section { padding: 104px 0; }
+@media (max-width: 767px) { section { padding: 72px 0; } }
+.lead { font-size: 1.12rem; max-width: 58ch; margin-top: 1rem; }
+.center { text-align: center; }
+.center .lead { margin-left: auto; margin-right: auto; }
+.rule { display: block; width: 56px; height: 3px; background: var(--gold); border-radius: 3px; margin: 1.2rem 0 0; }
+.center .rule { margin-left: auto; margin-right: auto; }
+.todo { background: #fff4d6; border-bottom: 2px dashed var(--gold); padding: 0 .2em; color: var(--ink); }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--navy); color: #fff; padding: .6rem 1rem; z-index: 50; border-radius: 999px; }
+.skip:focus { left: 8px; }
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+/* Botões */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .55rem;
+  padding: .9rem 1.5rem; border-radius: 999px; border: 1.5px solid transparent;
+  font: 700 1rem/1 "Nunito Sans", sans-serif; text-decoration: none; white-space: nowrap; cursor: pointer;
+  transition: transform .2s cubic-bezier(.16,1,.3,1), background-color .2s, border-color .2s, box-shadow .2s;
+}
+.btn i { font-size: 1.2rem; }
+.btn:active { transform: translateY(1px) scale(.98); }
+.btn-gold { background: var(--gold); color: var(--navy-ink); }
+.btn-gold:hover { background: var(--gold-light); }
+.btn-navy { background: var(--navy); color: #fff; }
+.btn-navy:hover { background: var(--navy-2); }
+.btn-ghost-light { border-color: rgba(255,255,255,.55); color: #fff; }
+.btn-ghost-light:hover { background: rgba(255,255,255,.1); border-color: #fff; }
+.btn-ghost { border-color: var(--navy); color: var(--navy); }
+.btn-ghost:hover { background: var(--sky); }
+.btn-wa { background: var(--wa); color: #fff; }
+.btn-wa:hover { filter: brightness(1.06); }
+
+/* Barra de plantão */
+.topbar { background: var(--navy-ink); color: #dfe6f3; font-size: .9rem; }
+.topbar .wrap { display: flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 40px; }
+.topbar a { text-decoration: none; font-weight: 700; color: #fff; }
+.topbar a:hover { text-decoration: underline; }
+.topbar .tb-right { display: none; gap: 1.5rem; }
+@media (min-width: 820px) { .topbar .tb-right { display: flex; } }
+.topbar i { color: var(--gold-light); margin-right: .35rem; vertical-align: -2px; }
+
+/* Navegação */
+header { position: sticky; top: 0; z-index: 20; background: rgba(253,253,254,.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; height: 76px; }
+.logo { display: inline-flex; align-items: center; gap: .3rem; text-decoration: none; color: var(--navy); }
+.logo-word { display: grid; line-height: 1; }
+.logo-script { font-family: "Pinyon Script", cursive; font-size: 2.5rem; line-height: .9; }
+.logo-script small { font-family: "Nunito Sans", sans-serif; font-size: .62rem; font-weight: 700; letter-spacing: .14em; vertical-align: 1.2em; margin-left: .3em; }
+.logo-sub { font-size: .6rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; margin-top: .15rem; }
+.logo i { font-size: 2.1rem; margin-left: .1rem; transform: scaleX(-1); }
+.nav-links { display: none; list-style: none; gap: 1.6rem; }
+.nav-links a { text-decoration: none; font-weight: 600; color: var(--muted); font-size: .97rem; transition: color .2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--navy); }
+.nav-cta { display: none; }
+@media (min-width: 1100px) { .nav-links { display: flex; } .nav-cta { display: inline-flex; } }
+.menu-btn { width: 46px; height: 46px; border-radius: 999px; border: 1.5px solid var(--line); background: transparent; color: var(--navy); font-size: 1.3rem; display: grid; place-items: center; cursor: pointer; }
+@media (min-width: 1100px) { .menu-btn { display: none; } }
+.mobile-menu { display: none; padding: 4px 0 20px; }
+.mobile-menu.open { display: block; }
+.mobile-menu a { display: block; padding: 12px 0; text-decoration: none; font-weight: 600; font-size: 1.08rem; color: var(--navy); }
+.mobile-menu .btn { width: 100%; margin-top: 10px; }
+
+/* Hero */
+.hero { background: var(--navy); color: #fff; padding: 72px 0 160px; position: relative; overflow: hidden; }
+.hero::before {
+  content: ""; position: absolute; inset: auto -10% -45% 30%; height: 90%;
+  background: radial-gradient(closest-side, rgba(61, 104, 190, .55), transparent);
+  pointer-events: none;
+}
+.hero-grid { position: relative; display: grid; gap: 56px; align-items: center; }
+@media (min-width: 980px) { .hero-grid { grid-template-columns: 1.05fr .95fr; gap: 64px; } }
+.hero h1 { font-size: clamp(2.6rem, 5vw, 4.2rem); color: #fff; max-width: 13ch; }
+.hero h1 em { color: var(--gold-light); }
+.hero-sub { color: #cfd9ee; font-size: 1.15rem; max-width: 44ch; margin-top: 1.4rem; }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2.2rem; }
+.blob-frame { position: relative; isolation: isolate; }
+.blob-frame::after {
+  content: ""; position: absolute; inset: -14px; z-index: -1;
+  border: 2px solid var(--gold); border-radius: inherit; pointer-events: none;
+  border-radius: 46% 54% 42% 58% / 52% 44% 56% 48%; transform: rotate(-4deg);
+}
+.blob { border-radius: 58% 42% 50% 50% / 46% 54% 46% 54%; overflow: hidden; aspect-ratio: 1 / 1; box-shadow: 0 30px 60px -30px rgba(0,0,0,.55); }
+.blob img { width: 100%; height: 100%; object-fit: cover; }
+.hero .blob-frame { max-width: 520px; margin: 0 auto; width: 100%; }
+@media (max-width: 979px) { .hero .blob-frame { max-width: 380px; } .hero { padding-bottom: 140px; } }
+
+/* Caminhos rápidos (sobrepostos ao hero) */
+.paths { position: relative; z-index: 2; margin-top: -96px; }
+.paths-grid { display: grid; gap: 16px; }
+@media (min-width: 860px) { .paths-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; } }
+.path {
+  background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow); padding: 26px 26px 24px;
+  text-decoration: none; display: grid; grid-template-columns: auto 1fr auto; gap: 1rem; align-items: center;
+  border: 1.5px solid transparent; transition: transform .25s cubic-bezier(.16,1,.3,1), border-color .25s;
+}
+.path:hover { transform: translateY(-3px); border-color: var(--sky-2); }
+.path .ic { width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; background: var(--sky); color: var(--navy); font-size: 1.5rem; }
+.path strong { display: block; font-family: "Playfair Display", serif; font-size: 1.25rem; color: var(--navy); line-height: 1.2; }
+.path span { font-size: .95rem; color: var(--muted); }
+.path .arrow { color: var(--gold-text); font-size: 1.3rem; transition: transform .25s cubic-bezier(.16,1,.3,1); }
+.path:hover .arrow { transform: translateX(4px); }
+.path.urgent { border-color: var(--gold); }
+.path.urgent .ic { background: var(--gold); color: var(--navy-ink); }
+
+/* Homenagens */
+.tributes-grid { display: grid; gap: 40px; margin-top: 56px; }
+@media (min-width: 1040px) { .tributes-grid { grid-template-columns: 1.7fr 1fr; gap: 40px; align-items: start; } }
+.note {
+  background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow);
+  display: grid; gap: 28px; padding: 32px; position: relative; overflow: hidden;
+}
+@media (min-width: 640px) { .note { grid-template-columns: 170px 1fr; gap: 36px; padding: 40px; } }
+.note::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: var(--gold); }
+.portrait { width: 160px; aspect-ratio: 3 / 4; border-radius: 50%; overflow: hidden; outline: 2px solid var(--gold); outline-offset: 6px; margin: 6px auto 0; background: var(--sky); }
+.portrait img { width: 100%; height: 100%; object-fit: cover; }
+.note-tag { font-size: .85rem; font-weight: 700; color: var(--gold-text); }
+.note h3 { font-size: clamp(1.7rem, 3vw, 2.2rem); color: var(--navy); margin-top: .3rem; }
+.note .aka { margin-top: .4rem; color: var(--ink); }
+.note .aka strong { color: var(--gold-text); font-family: "Playfair Display", serif; font-size: 1.15rem; }
+.note dl { display: grid; margin-top: 1.4rem; padding: .4rem 1.3rem; background: var(--sky); border-radius: 10px; }
+.note dl > div { display: grid; gap: .1rem 1rem; padding: .75rem 0; }
+.note dl > div + div { border-top: 1px solid var(--sky-2); }
+@media (min-width: 520px) { .note dl > div { grid-template-columns: 150px 1fr; align-items: baseline; } }
+.note dt { font-size: .82rem; font-weight: 700; color: var(--muted); }
+.note dd { font-weight: 600; color: var(--ink); line-height: 1.4; }
+.note-actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.5rem; }
+.flowers { background: var(--navy); color: #fff; border-radius: var(--r); padding: 36px; position: relative; overflow: hidden; }
+.flowers::after { content: ""; position: absolute; right: -110px; top: -110px; width: 220px; height: 220px; border-radius: 50%; border: 2px solid rgba(201,161,74,.5); }
+.flowers h3 { font-size: 1.7rem; color: #fff; }
+.flowers p { color: #cfd9ee; margin-top: .6rem; }
+.flowers ol { list-style: none; counter-reset: f; display: grid; gap: 1rem; margin: 1.6rem 0 1.8rem; }
+.flowers li { counter-increment: f; display: grid; grid-template-columns: 34px 1fr; gap: .8rem; color: #e6ecf7; }
+.flowers li::before { content: counter(f); width: 34px; height: 34px; border-radius: 50%; border: 1.5px solid var(--gold-light); color: var(--gold-light); display: grid; place-items: center; font-weight: 700; font-size: .95rem; }
+.tributes-more { margin-top: 1.4rem; display: inline-flex; align-items: center; gap: .4rem; font-weight: 700; color: var(--navy); text-decoration: none; }
+.tributes-more:hover { text-decoration: underline; }
+
+/* Primeiros passos */
+.steps-wrap { background: var(--surface); }
+.steps-grid { display: grid; gap: 56px; }
+@media (min-width: 980px) { .steps-grid { grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; } .steps-media { position: sticky; top: 120px; } }
+.steps { list-style: none; counter-reset: s; display: grid; gap: 2.2rem; margin-top: 2.4rem; }
+.steps li { counter-increment: s; display: grid; grid-template-columns: 64px 1fr; gap: 1.2rem; }
+.steps li::before { content: counter(s) "."; font-family: "Playfair Display", serif; font-weight: 700; font-size: 2.6rem; line-height: 1; color: var(--gold); }
+.steps h3 { color: var(--navy); margin-bottom: .35rem; }
+.steps-media .blob { aspect-ratio: 4 / 3.4; border-radius: 44% 56% 48% 52% / 54% 46% 54% 46%; box-shadow: var(--shadow); }
+.steps-media .blob-frame::after { border-radius: 52% 48% 56% 44% / 46% 54% 46% 54%; transform: rotate(3deg); }
+.steps-cta { margin-top: 2.6rem; display: flex; flex-wrap: wrap; gap: .8rem; }
+
+/* Serviços */
+.services-grid { display: grid; gap: 18px; margin-top: 56px; }
+@media (min-width: 700px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1040px) { .services-grid { grid-template-columns: repeat(4, 1fr); } .svc.wide { grid-column: span 2; } }
+.svc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 28px; transition: border-color .2s, transform .25s cubic-bezier(.16,1,.3,1); }
+.svc:hover { border-color: var(--sky-2); transform: translateY(-2px); }
+.svc i { font-size: 1.9rem; color: var(--navy); }
+.svc h3 { color: var(--navy); margin: .9rem 0 .4rem; font-size: 1.3rem; }
+.svc p { font-size: .98rem; }
+.svc.tinted { background: var(--sky); border-color: var(--sky); }
+.svc.dark { background: var(--navy); border-color: var(--navy); }
+.svc.dark i { color: var(--gold-light); }
+.svc.dark h3 { color: #fff; }
+.svc.dark p { color: #cfd9ee; }
+
+/* Planos */
+.plans-band { background: linear-gradient(180deg, var(--bg) 0, var(--sky) 100%); }
+.plans-grid { display: grid; gap: 20px; margin-top: 56px; align-items: stretch; }
+@media (min-width: 960px) { .plans-grid { grid-template-columns: repeat(3, 1fr); } }
+.plan { background: var(--surface); border-radius: var(--r); padding: 34px 30px; display: flex; flex-direction: column; box-shadow: 0 10px 30px -24px rgba(20,44,99,.4); }
+.plan h3 { color: var(--navy); font-size: 1.6rem; }
+.plan .who { font-size: .95rem; margin-top: .25rem; }
+.price { margin: 1.4rem 0 1.5rem; padding-bottom: 1.4rem; border-bottom: 1px solid var(--line); font-family: "Playfair Display", serif; font-weight: 700; font-size: 2.6rem; line-height: 1; color: var(--navy); white-space: nowrap; }
+.price small { font-family: "Nunito Sans", sans-serif; font-size: .95rem; font-weight: 600; color: var(--muted); }
+.plan ul { list-style: none; display: grid; gap: .7rem; flex: 1; align-content: start; margin-bottom: 2rem; }
+.plan li { display: flex; gap: .6rem; align-items: flex-start; font-size: .98rem; }
+.plan li i { color: var(--gold-text); font-size: 1.15rem; margin-top: .2rem; flex-shrink: 0; }
+.plan.featured { background: var(--navy); color: #fff; box-shadow: var(--shadow); position: relative; }
+.plan.featured h3, .plan.featured .price { color: #fff; }
+.plan.featured .who, .plan.featured .price small { color: #cfd9ee; }
+.plan.featured .price { border-color: rgba(255,255,255,.18); }
+.plan.featured li i { color: var(--gold-light); }
+.plan-flag { position: absolute; top: -14px; left: 30px; background: var(--gold); color: var(--navy-ink); font-size: .82rem; font-weight: 700; padding: .35rem .9rem; border-radius: 999px; }
+.plans-note { margin-top: 24px; font-size: .92rem; text-align: center; }
+
+/* Pax Pet */
+.pet-grid { display: grid; gap: 56px; }
+@media (min-width: 980px) { .pet-grid { grid-template-columns: .9fr 1.1fr; gap: 80px; align-items: center; } }
+.pet .blob-frame { max-width: 460px; width: 100%; margin: 0 auto; }
+.pet .blob { aspect-ratio: 4 / 4.6; border-radius: 50% 50% 46% 54% / 40% 40% 60% 60%; box-shadow: var(--shadow); }
+.pet .blob img { object-position: 50% 30%; }
+.pet .blob-frame::after { border-radius: 50% 50% 50% 50% / 42% 42% 58% 58%; transform: rotate(4deg); }
+.pet-brand { display: inline-flex; align-items: center; gap: .5rem; font-weight: 700; color: var(--gold-text); }
+.pet-brand i { font-size: 1.3rem; }
+.pet h2 { margin-top: .6rem; }
+.pet-options { display: grid; gap: 14px; margin-top: 2rem; }
+@media (min-width: 620px) { .pet-options { grid-template-columns: 1fr 1fr; } }
+.pet-opt { border: 1.5px solid var(--line); border-radius: var(--r); padding: 22px 22px 24px; background: var(--surface); display: flex; flex-direction: column; gap: .9rem; }
+.pet-opt.featured { border-color: var(--navy); }
+.pet-opt h3 { color: var(--navy); font-size: 1.25rem; }
+.pet-opt .price { font-size: 2rem; margin: 0; padding: 0; border: 0; }
+.pet-opt ul { list-style: none; display: grid; gap: .5rem; flex: 1; align-content: start; }
+.pet-opt li { display: flex; gap: .5rem; font-size: .96rem; }
+.pet-opt li i { color: var(--gold-text); margin-top: .25rem; flex-shrink: 0; }
+.partners { margin-top: 1.6rem; display: flex; gap: 1rem; align-items: center; padding: 1.1rem 1.3rem; border-radius: var(--r); background: var(--sky); }
+.partners i { font-size: 1.8rem; color: var(--navy); flex-shrink: 0; }
+.partners p { color: var(--ink); font-size: .96rem; }
+
+/* Unidades */
+.units-band { background: var(--surface); }
+.units-grid { display: grid; gap: 18px; margin-top: 56px; }
+@media (min-width: 860px) { .units-grid { grid-template-columns: 1.3fr 1fr 1fr; } }
+.unit { border-radius: var(--r); padding: 30px; border: 1px solid var(--line); background: var(--bg); display: flex; flex-direction: column; gap: 1rem; }
+.unit.main { background: var(--navy); border-color: var(--navy); color: #fff; }
+.unit .city { font-family: "Playfair Display", serif; font-weight: 700; font-size: 1.6rem; line-height: 1.15; color: var(--navy); }
+.unit.main .city { color: #fff; font-size: 2rem; }
+.unit-flag { align-self: flex-start; font-size: .8rem; font-weight: 700; background: var(--gold); color: var(--navy-ink); padding: .25rem .75rem; border-radius: 999px; }
+.unit ul { list-style: none; display: grid; gap: .6rem; flex: 1; }
+.unit li { display: flex; gap: .6rem; align-items: flex-start; }
+.unit li i { font-size: 1.2rem; color: var(--gold-text); margin-top: .2rem; flex-shrink: 0; }
+.unit.main li { color: #e1e8f5; }
+.unit.main li i { color: var(--gold-light); }
+.unit li a { font-weight: 700; text-decoration: none; }
+.unit li a:hover { text-decoration: underline; }
+.unit.main .todo { background: rgba(255,244,214,.15); color: #fff; }
+
+/* Quem somos */
+.about-grid { display: grid; gap: 48px; }
+@media (min-width: 980px) { .about-grid { grid-template-columns: 1.1fr .9fr; gap: 80px; align-items: center; } }
+.about-text p + p { margin-top: 1rem; }
+.values { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.value { background: var(--surface); border-radius: var(--r); padding: 26px 22px; border: 1px solid var(--line); }
+.value:nth-child(2), .value:nth-child(3) { background: var(--sky); border-color: var(--sky); }
+.value strong { display: block; font-family: "Pinyon Script", cursive; font-weight: 400; font-size: 2.1rem; line-height: 1.1; color: var(--navy); }
+.value span { display: block; margin-top: .4rem; font-size: .93rem; color: var(--muted); }
+
+/* Dúvidas */
+.faq-band { background: var(--surface); }
+.faq-grid { display: grid; gap: 40px; }
+@media (min-width: 980px) { .faq-grid { grid-template-columns: .8fr 1.2fr; gap: 80px; } .faq-intro { position: sticky; top: 120px; align-self: start; } }
+.faq-intro .btn { margin-top: 1.8rem; }
+.faq-list details { border-radius: var(--r); background: var(--bg); margin-bottom: 10px; transition: background-color .2s; }
+.faq-list details[open] { background: var(--sky); }
+.faq-list summary { list-style: none; cursor: pointer; padding: 1.2rem 1.4rem; display: flex; justify-content: space-between; gap: 1rem; align-items: center; font-weight: 700; font-size: 1.05rem; color: var(--navy); }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary i { flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--surface); color: var(--gold-text); transition: transform .3s cubic-bezier(.16,1,.3,1); }
+.faq-list details[open] summary i { transform: rotate(45deg); }
+.faq-list details p { padding: 0 1.4rem 1.3rem; max-width: 62ch; }
+
+/* Chamada final */
+.closing { padding: 0 0 104px; }
+.closing-box { background: var(--navy); border-radius: 24px; padding: 56px 40px; color: #fff; display: grid; gap: 28px; align-items: center; position: relative; overflow: hidden; }
+@media (min-width: 900px) { .closing-box { grid-template-columns: 1.4fr 1fr; padding: 64px; } }
+.closing-box::after { content: ""; position: absolute; width: 360px; height: 360px; right: -120px; top: -160px; border-radius: 50%; border: 2px solid rgba(201,161,74,.45); }
+.closing-box h2 { color: #fff; }
+.closing-box p { color: #cfd9ee; margin-top: .8rem; max-width: 46ch; }
+.closing-actions { display: flex; flex-wrap: wrap; gap: .8rem; position: relative; z-index: 1; }
+@media (min-width: 900px) { .closing-actions { justify-content: flex-end; } }
+
+/* Rodapé */
+footer { background: var(--navy-ink); color: #cfd9ee; padding: 64px 0 36px; }
+.foot-grid { display: grid; gap: 36px; }
+@media (min-width: 860px) { .foot-grid { grid-template-columns: 1.3fr 1fr 1fr; } }
+footer .logo { color: #fff; }
+footer .tag { font-family: "Pinyon Script", cursive; font-size: 1.6rem; color: var(--gold-light); margin-top: .8rem; }
+footer .foot-title { color: #fff; font-weight: 700; margin-bottom: .7rem; }
+footer ul { list-style: none; display: grid; gap: .45rem; }
+footer a { text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+.foot-bottom { margin-top: 48px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.12); font-size: .85rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem 2rem; }
+
+/* WhatsApp flutuante */
+.wa-float {
+  position: fixed; right: 18px; bottom: 18px; z-index: 30;
+  width: 60px; height: 60px; border-radius: 50%; background: var(--wa); color: #fff;
+  display: grid; place-items: center; font-size: 2rem; text-decoration: none;
+  box-shadow: 0 14px 30px -10px rgba(16, 90, 48, .6);
+  transition: transform .25s cubic-bezier(.16,1,.3,1);
+}
+.wa-float:hover { transform: scale(1.06); }
+.wa-float:active { transform: scale(.96); }
+.wa-float .tip {
+  position: absolute; right: 72px; white-space: nowrap; background: var(--surface); color: var(--ink);
+  font-size: .9rem; font-weight: 700; padding: .55rem .9rem; border-radius: 999px; box-shadow: var(--shadow);
+  opacity: 0; transform: translateX(6px); transition: opacity .2s, transform .2s; pointer-events: none;
+}
+.wa-float:hover .tip, .wa-float:focus-visible .tip { opacity: 1; transform: none; }
+
+/* Movimento: entrada suave; nada em loop */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  .hero-text > * { animation: rise .9s cubic-bezier(.16,1,.3,1) both; }
+  .hero-text > *:nth-child(2) { animation-delay: .08s; }
+  .hero-text > *:nth-child(3) { animation-delay: .16s; }
+  .hero .blob-frame { animation: fade 1.2s .1s ease both; }
+  .path { animation: rise .9s cubic-bezier(.16,1,.3,1) both; }
+  .path:nth-child(2) { animation-delay: .1s; }
+  .path:nth-child(3) { animation-delay: .2s; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px); } }
+  @keyframes fade { from { opacity: 0; transform: scale(.97); } }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<div class="topbar">
+  <div class="wrap">
+    <span><i class="ph-fill ph-clock"></i>Plantão 24 horas: <a href="tel:+551936571645">(19) 3657-1645</a></span>
+    <span class="tb-right">
+      <span><i class="ph ph-whatsapp-logo"></i><a href="https://wa.me/5519983389779" target="_blank" rel="noopener">(19) 98338-9779</a></span>
+      <span><i class="ph ph-phone"></i><a href="tel:+5535988112852">(35) 98811-2852</a></span>
+    </span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <nav class="nav" aria-label="Principal">
+      <a class="logo" href="#inicio" aria-label="Grupo Pax Assistência Funeral, início">
+        <span class="logo-word">
+          <span class="logo-script">Pax<small>GRUPO</small></span>
+          <span class="logo-sub">Assistência Funeral</span>
+        </span>
+        <i class="ph-light ph-bird" aria-hidden="true"></i>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#homenagens">Homenagens</a></li>
+        <li><a href="#primeiros-passos">Primeiros passos</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#pax-pet">Pax Pet</a></li>
+        <li><a href="#unidades">Unidades</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+      </ul>
+      <a class="btn btn-navy nav-cta" href="tel:+551936571645"><i class="ph ph-phone"></i>Ligar 24h</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu"><i class="ph ph-list"></i></button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#homenagens">Homenagens</a>
+      <a href="#primeiros-passos">Primeiros passos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#planos">Planos</a>
+      <a href="#pax-pet">Pax Pet</a>
+      <a href="#unidades">Unidades</a>
+      <a href="#quem-somos">Quem somos</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a class="btn btn-navy" href="tel:+551936571645"><i class="ph ph-phone"></i>Ligar 24h: (19) 3657-1645</a>
+    </div>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <h1>Homenageando <em>histórias</em> de vidas.</h1>
+        <p class="hero-sub">Assistência funeral 24 horas e planos para a família e para o seu pet, com o cuidado que cada despedida merece.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-gold" href="tel:+551936571645"><i class="ph ph-phone"></i>Ligar 24h</a>
+          <a class="btn btn-ghost-light" href="#planos">Conhecer os planos</a>
+        </div>
+      </div>
+      <div class="blob-frame">
+        <div class="blob">
+          <img src="img/abraco.jpg" alt="Mãe e filha se abraçando com carinho, à luz da janela" width="784" height="760" fetchpriority="high">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="paths">
+    <div class="wrap paths-grid">
+      <a class="path urgent" href="#primeiros-passos">
+        <span class="ic"><i class="ph ph-hand-heart"></i></span>
+        <div><strong>Perdi alguém agora</strong><span>O que fazer nas primeiras horas</span></div>
+        <i class="ph ph-arrow-right arrow"></i>
+      </a>
+      <a class="path" href="#homenagens">
+        <span class="ic"><i class="ph ph-flower-lotus"></i></span>
+        <div><strong>Homenagens</strong><span>Velórios, horários e coroas de flores</span></div>
+        <i class="ph ph-arrow-right arrow"></i>
+      </a>
+      <a class="path" href="#planos">
+        <span class="ic"><i class="ph ph-shield-check"></i></span>
+        <div><strong>Quero me planejar</strong><span>Planos para a família e para pets</span></div>
+        <i class="ph ph-arrow-right arrow"></i>
+      </a>
+    </div>
+  </div>
+
+  <section id="homenagens">
+    <div class="wrap">
+      <div class="reveal">
+        <h2>Homenagens</h2>
+        <span class="rule"></span>
+        <p class="lead">Informações de velório e sepultamento, para que amigos e familiares possam se despedir.</p>
+      </div>
+      <div class="tributes-grid">
+        <div class="reveal">
+          <!-- Nota de falecimento: copie este bloco para cada nova homenagem -->
+          <article class="note">
+            <div class="portrait"><img src="img/elza.jpg" alt="Retrato da Sra. Elza Merli" width="320" height="520" loading="lazy"></div>
+            <div>
+              <p class="note-tag">Nota de falecimento</p>
+              <h3>Sra. Elza Merli</h3>
+              <p class="aka">Carinhosamente conhecida por <strong>Tia Elza</strong></p>
+              <dl>
+                <div><dt>Velório</dt><dd>Velório Municipal de São José do Rio Pardo</dd></div>
+                <div><dt>Início das homenagens</dt><dd>02/10/2026 às 7h</dd></div>
+                <div><dt>Sepultamento</dt><dd>02/10/2026 às 14h</dd></div>
+                <div><dt>Local</dt><dd>Cemitério Municipal de São José do Rio Pardo</dd></div>
+              </dl>
+              <div class="note-actions">
+                <a class="btn btn-navy" href="https://wa.me/5519983389779?text=Ol%C3%A1%2C%20quero%20enviar%20uma%20coroa%20de%20flores%20para%20a%20homenagem%20da%20Sra.%20Elza%20Merli." target="_blank" rel="noopener"><i class="ph ph-flower"></i>Enviar coroa de flores</a>
+                <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Vel%C3%B3rio%20Municipal%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Pardo" target="_blank" rel="noopener"><i class="ph ph-map-pin"></i>Ver local</a>
+              </div>
+            </div>
+          </article>
+          <a class="tributes-more" href="#"><span>Ver todas as homenagens</span><i class="ph ph-arrow-right"></i></a>
+        </div>
+        <aside class="flowers reveal">
+          <h3>Preste sua homenagem com uma coroa de flores</h3>
+          <p>Entregamos no local do velório, com faixa personalizada.</p>
+          <ol>
+            <li>Chame no WhatsApp e diga o nome da pessoa homenageada.</li>
+            <li>Escolha o modelo da coroa e escreva a mensagem da faixa.</li>
+            <li>Nós entregamos no velório, antes do início das homenagens.</li>
+          </ol>
+          <a class="btn btn-gold" href="https://wa.me/5519983389779?text=Ol%C3%A1%2C%20quero%20encomendar%20uma%20coroa%20de%20flores." target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo"></i>Encomendar pelo WhatsApp</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps-wrap" id="primeiros-passos">
+    <div class="wrap steps-grid">
+      <div>
+        <div class="reveal">
+          <h2>Perdeu alguém? A família não precisa enfrentar tudo sozinha.</h2>
+          <span class="rule"></span>
+        </div>
+        <ol class="steps">
+          <li class="reveal"><div><h3>Ligue para o plantão</h3><p>Atendemos 24 horas pelo (19) 3657-1645. Explicamos cada etapa com calma e vamos até você.</p></div></li>
+          <li class="reveal"><div><h3>A documentação também faz parte da despedida</h3><p>Certidões, autorizações e registros precisam ser organizados com atenção. Cuidamos disso junto com a família.</p></div></li>
+          <li class="reveal"><div><h3>Separe os documentos pessoais</h3><p>RG e CPF da pessoa falecida e certidão de nascimento ou casamento.</p></div></li>
+          <li class="reveal"><div><h3>Deixe o restante conosco</h3><p>Remoção, preparação, velório, sepultamento ou cremação, e a homenagem nas nossas redes, se a família desejar.</p></div></li>
+        </ol>
+        <div class="steps-cta reveal">
+          <a class="btn btn-navy" href="tel:+551936571645"><i class="ph ph-phone"></i>Ligar agora</a>
+          <a class="btn btn-wa" href="https://wa.me/5519983389779?text=Ol%C3%A1%2C%20preciso%20de%20atendimento%20agora." target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo"></i>Chamar no WhatsApp</a>
+        </div>
+      </div>
+      <div class="steps-media reveal">
+        <div class="blob-frame">
+          <div class="blob"><img src="img/documentos.jpg" alt="Atendente da Pax orientando uma senhora com a documentação" width="740" height="500" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <div class="wrap">
+      <div class="center reveal">
+        <h2>Cuidado em cada detalhe</h2>
+        <span class="rule"></span>
+        <p class="lead">Da primeira ligação à última homenagem, organizamos tudo para a família.</p>
+      </div>
+      <div class="services-grid">
+        <article class="svc dark wide reveal"><i class="ph ph-flower-lotus"></i><h3>Velório e cerimônia</h3><p>Ornamentação com flores naturais, cerimônia ecumênica e acolhimento à família durante toda a homenagem.</p></article>
+        <article class="svc reveal"><i class="ph ph-flame"></i><h3>Cremação</h3><p>Acompanhamento completo e entrega das cinzas à família.</p></article>
+        <article class="svc reveal"><i class="ph ph-tree"></i><h3>Sepultamento</h3><p>Organização junto aos cemitérios da região.</p></article>
+        <article class="svc reveal"><i class="ph ph-path"></i><h3>Traslado</h3><p>Transporte para outras cidades e estados, com todas as autorizações.</p></article>
+        <article class="svc tinted reveal"><i class="ph ph-files"></i><h3>Documentação</h3><p>Certidão de óbito, liberações e registros em cartório.</p></article>
+        <article class="svc reveal"><i class="ph ph-flower"></i><h3>Coroas de flores</h3><p>Modelos variados, com faixa personalizada e entrega no velório.</p></article>
+        <article class="svc reveal"><i class="ph ph-megaphone-simple"></i><h3>Nota de falecimento</h3><p>Divulgação do velório nas redes da Pax, quando a família autoriza.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="plans-band" id="planos">
+    <div class="wrap">
+      <div class="center reveal">
+        <h2>Planos para cuidar de quem você ama</h2>
+        <span class="rule"></span>
+        <p class="lead">Tranquilidade para a família hoje, para que ninguém precise se preocupar depois.</p>
+      </div>
+      <!-- Preços de exemplo: substituir pela tabela oficial da Pax -->
+      <div class="plans-grid">
+        <article class="plan reveal">
+          <h3>Pax Essencial</h3>
+          <p class="who">Titular e cônjuge</p>
+          <p class="price">R$ 39,90<small>/mês</small></p>
+          <ul>
+            <li><i class="ph-bold ph-check"></i>Atendimento 24 horas</li>
+            <li><i class="ph-bold ph-check"></i>Urna e ornamentação</li>
+            <li><i class="ph-bold ph-check"></i>Remoção na região</li>
+            <li><i class="ph-bold ph-check"></i>Toda a documentação</li>
+          </ul>
+          <a class="btn btn-ghost" href="https://wa.me/5519983389779?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20plano%20Pax%20Essencial." target="_blank" rel="noopener">Quero este plano</a>
+        </article>
+        <article class="plan featured reveal">
+          <span class="plan-flag">Mais escolhido</span>
+          <h3>Pax Família</h3>
+          <p class="who">Titular e até 6 dependentes</p>
+          <p class="price">R$ 69,90<small>/mês</small></p>
+          <ul>
+            <li><i class="ph-bold ph-check"></i>Tudo do Pax Essencial</li>
+            <li><i class="ph-bold ph-check"></i>Coroa de flores inclusa</li>
+            <li><i class="ph-bold ph-check"></i>Cremação ou sepultamento</li>
+            <li><i class="ph-bold ph-check"></i>Traslado estendido</li>
+            <li><i class="ph-bold ph-check"></i>Benefícios nos parceiros Pax</li>
+          </ul>
+          <a class="btn btn-gold" href="https://wa.me/5519983389779?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20plano%20Pax%20Fam%C3%ADlia." target="_blank" rel="noopener">Quero este plano</a>
+        </article>
+        <article class="plan reveal">
+          <h3>Pax Completo</h3>
+          <p class="who">Família ampliada, com pais e sogros</p>
+          <p class="price">R$ 109,90<small>/mês</small></p>
+          <ul>
+            <li><i class="ph-bold ph-check"></i>Tudo do Pax Família</li>
+            <li><i class="ph-bold ph-check"></i>Traslado nacional</li>
+            <li><i class="ph-bold ph-check"></i>Cerimônia personalizada</li>
+            <li><i class="ph-bold ph-check"></i>Apoio à família no luto</li>
+          </ul>
+          <a class="btn btn-ghost" href="https://wa.me/5519983389779?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20plano%20Pax%20Completo." target="_blank" rel="noopener">Quero este plano</a>
+        </article>
+      </div>
+      <p class="plans-note">Consulte carências e condições completas com nossa equipe.</p>
+    </div>
+  </section>
+
+  <section class="pet" id="pax-pet">
+    <div class="wrap pet-grid">
+      <div class="blob-frame reveal">
+        <div class="blob"><img src="img/pet.jpg" alt="Menina abraçando seu cachorro sob a luz do fim de tarde" width="960" height="1440" loading="lazy"></div>
+      </div>
+      <div>
+        <div class="reveal">
+          <span class="pet-brand"><i class="ph-fill ph-paw-print"></i>Pax Pet</span>
+          <h2>Cuidado e carinho para quem também faz parte da família.</h2>
+          <span class="rule"></span>
+          <p class="lead">Uma despedida respeitosa para cães e gatos, com remoção em casa ou na clínica.</p>
+        </div>
+        <div class="pet-options">
+          <article class="pet-opt reveal">
+            <h3>Pax Pet</h3>
+            <p class="price">R$ 19,90<small>/mês</small></p>
+            <ul>
+              <li><i class="ph-bold ph-check"></i>Remoção em casa ou na clínica</li>
+              <li><i class="ph-bold ph-check"></i>Cremação coletiva</li>
+              <li><i class="ph-bold ph-check"></i>Certificado de cremação</li>
+            </ul>
+            <a class="btn btn-ghost" href="https://wa.me/5519983389779?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20Pax%20Pet." target="_blank" rel="noopener">Quero este plano</a>
+          </article>
+          <article class="pet-opt featured reveal">
+            <h3>Pax Pet Memória</h3>
+            <p class="price">R$ 34,90<small>/mês</small></p>
+            <ul>
+              <li><i class="ph-bold ph-check"></i>Cremação individual com devolução das cinzas</li>
+              <li><i class="ph-bold ph-check"></i>Urna e impressão da patinha</li>
+              <li><i class="ph-bold ph-check"></i>Momento de despedida para a família</li>
+            </ul>
+            <a class="btn btn-navy" href="https://wa.me/5519983389779?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20Pax%20Pet%20Mem%C3%B3ria." target="_blank" rel="noopener">Quero este plano</a>
+          </article>
+        </div>
+        <div class="partners reveal">
+          <i class="ph ph-storefront"></i>
+          <p><strong>Parceiros Pax Pet:</strong> benefícios especiais para clientes em pet shops da região, como a Star Pet. Mais parceiros estão chegando.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="units-band" id="unidades">
+    <div class="wrap">
+      <div class="reveal">
+        <h2>Onde estamos</h2>
+        <span class="rule"></span>
+        <p class="lead">Atendimento 24 horas em todas as unidades.</p>
+      </div>
+      <div class="units-grid">
+        <article class="unit main reveal">
+          <span class="unit-flag">Matriz</span>
+          <p class="city">São José do Rio Pardo - SP</p>
+          <ul>
+            <li><i class="ph ph-map-pin"></i><span class="todo">Endereço da matriz</span></li>
+            <li><i class="ph ph-phone"></i><a href="tel:+551936571645">(19) 3657-1645</a></li>
+            <li><i class="ph ph-whatsapp-logo"></i><a href="https://wa.me/5519983389779" target="_blank" rel="noopener">(19) 98338-9779</a></li>
+          </ul>
+          <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&query=Grupo%20Pax%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Pardo" target="_blank" rel="noopener"><i class="ph ph-navigation-arrow"></i>Como chegar</a>
+        </article>
+        <article class="unit reveal">
+          <p class="city"><span class="todo">Cidade da unidade</span></p>
+          <ul>
+            <li><i class="ph ph-map-pin"></i><span class="todo">Endereço</span></li>
+            <li><i class="ph ph-phone"></i><a href="tel:+5535988112852">(35) 98811-2852</a></li>
+          </ul>
+        </article>
+        <article class="unit reveal">
+          <p class="city"><span class="todo">Cidade da unidade</span></p>
+          <ul>
+            <li><i class="ph ph-map-pin"></i><span class="todo">Endereço</span></li>
+            <li><i class="ph ph-phone"></i><span class="todo">Telefone</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="quem-somos">
+    <div class="wrap about-grid">
+      <div class="about-text reveal">
+        <h2>Cuidando de cada detalhe da vida de toda a família.</h2>
+        <span class="rule"></span>
+        <p class="lead">O Grupo Pax existe para que nenhuma família passe sozinha por um dos momentos mais delicados da vida.</p>
+        <p>Acompanhamos cada despedida com respeito e atenção aos detalhes, e acreditamos que toda história merece ser lembrada com carinho. Por isso, além do atendimento funeral, oferecemos planos, homenagens e uma rede de parceiros que cuida da família no dia a dia.</p>
+      </div>
+      <div class="values reveal">
+        <div class="value"><strong>Carinho</strong><span>Acolhemos cada família como se fosse a nossa.</span></div>
+        <div class="value"><strong>Respeito</strong><span>Pela história, pela fé e pelas escolhas de cada um.</span></div>
+        <div class="value"><strong>Confiança</strong><span>Preços claros e compromisso cumprido.</span></div>
+        <div class="value"><strong>Atenção</strong><span>Presentes em cada detalhe, a qualquer hora.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-band" id="duvidas">
+    <div class="wrap faq-grid">
+      <div class="faq-intro reveal">
+        <h2>Dúvidas frequentes</h2>
+        <span class="rule"></span>
+        <p class="lead">Não encontrou sua resposta? Fale com a gente a qualquer hora.</p>
+        <a class="btn btn-wa" href="https://wa.me/5519983389779?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida." target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo"></i>Perguntar no WhatsApp</a>
+      </div>
+      <div class="faq-list reveal">
+        <details open>
+          <summary>O que fazer logo após o falecimento?<i class="ph-bold ph-plus"></i></summary>
+          <p>Ligue para o plantão no (19) 3657-1645. Orientamos sobre a declaração de óbito, fazemos a remoção e cuidamos dos próximos passos junto com a família.</p>
+        </details>
+        <details>
+          <summary>Vocês atendem quem não tem plano?<i class="ph-bold ph-plus"></i></summary>
+          <p>Sim. Atendemos qualquer família, com ou sem plano, e apresentamos as opções e formas de pagamento no primeiro contato.</p>
+        </details>
+        <details>
+          <summary>Como publico uma nota de falecimento?<i class="ph-bold ph-plus"></i></summary>
+          <p>Com a autorização da família, publicamos a homenagem com as informações de velório e sepultamento no site e nas redes da Pax.</p>
+        </details>
+        <details>
+          <summary>Como envio uma coroa de flores?<i class="ph-bold ph-plus"></i></summary>
+          <p>Pelo WhatsApp (19) 98338-9779. Você escolhe o modelo, escreve a mensagem da faixa e nós entregamos no local do velório.</p>
+        </details>
+        <details>
+          <summary>Qual é a carência dos planos?<i class="ph-bold ph-plus"></i></summary>
+          <p>Não há carência para morte acidental. Para outras causas, a carência está descrita no contrato de cada plano.</p>
+        </details>
+        <details>
+          <summary>O Pax Pet atende quais animais?<i class="ph-bold ph-plus"></i></summary>
+          <p>Cães e gatos de qualquer porte. Também atendemos pets sem plano, com valores informados no primeiro contato.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap">
+      <div class="closing-box reveal">
+        <div>
+          <h2>Estamos aqui, a qualquer hora.</h2>
+          <p>Plantão 24 horas, todos os dias, inclusive feriados.</p>
+        </div>
+        <div class="closing-actions">
+          <a class="btn btn-gold" href="tel:+551936571645"><i class="ph ph-phone"></i>(19) 3657-1645</a>
+          <a class="btn btn-ghost-light" href="https://wa.me/5519983389779" target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo"></i>WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#inicio" aria-label="Grupo Pax, voltar ao início">
+          <span class="logo-word">
+            <span class="logo-script">Pax<small>GRUPO</small></span>
+            <span class="logo-sub">Assistência Funeral</span>
+          </span>
+          <i class="ph-light ph-bird" aria-hidden="true"></i>
+        </a>
+        <p class="tag">Homenageando Histórias de Vidas</p>
+      </div>
+      <div>
+        <p class="foot-title">Atendimento 24 horas</p>
+        <ul>
+          <li><a href="tel:+551936571645">(19) 3657-1645</a></li>
+          <li><a href="https://wa.me/5519983389779" target="_blank" rel="noopener">WhatsApp (19) 98338-9779</a></li>
+          <li><a href="tel:+5535988112852">(35) 98811-2852</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-title">Navegação</p>
+        <ul>
+          <li><a href="#homenagens">Homenagens</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#pax-pet">Pax Pet</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Grupo Pax Assistência Funeral</span>
+      <span>Foto do Pax Pet: Basile Morin (CC BY-SA 4.0), via Wikimedia Commons.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5519983389779?text=Ol%C3%A1%2C%20preciso%20de%20atendimento." target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+  <i class="ph-fill ph-whatsapp-logo"></i><span class="tip">Fale conosco</span>
+</a>
+
+<script>
+  // Menu mobile
+  const btn = document.querySelector('.menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const setMenu = open => {
+    menu.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open);
+    btn.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+    btn.innerHTML = open ? '<i class="ph ph-x"></i>' : '<i class="ph ph-list"></i>';
+  };
+  btn.addEventListener('click', () => setMenu(!menu.classList.contains('open')));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+
+  // Entrada suave ao rolar
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Link ativo na navegação
+  const links = [...document.querySelectorAll('.nav-links a')];
+  const spy = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  document.querySelectorAll('main section[id]').forEach(s => spy.observe(s));
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -1,0 +1,472 @@
+- generic [active] [ref=e1]:
+  - link "Pular para o conteúdo" [ref=e2] [cursor=pointer]:
+    - /url: "#conteudo"
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: 
+      - text: "Plantão 24 horas:"
+      - link "(19) 3657-1645" [ref=e7] [cursor=pointer]:
+        - /url: tel:+551936571645
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: 
+        - link "(19) 98338-9779" [ref=e11] [cursor=pointer]:
+          - /url: https://wa.me/5519983389779
+      - generic [ref=e12]:
+        - generic [ref=e13]: 
+        - link "(35) 98811-2852" [ref=e14] [cursor=pointer]:
+          - /url: tel:+5535988112852
+  - banner [ref=e15]:
+    - generic [ref=e16]:
+      - navigation "Principal" [ref=e17]:
+        - link "Grupo Pax Assistência Funeral, início" [ref=e18] [cursor=pointer]:
+          - /url: "#inicio"
+          - generic [ref=e19]:
+            - generic [ref=e20]: PaxGRUPO
+            - generic [ref=e21]: Assistência Funeral
+          - generic [aria-hidden] [ref=e22]: 
+        - list [ref=e23]:
+          - listitem [ref=e24]:
+            - link "Homenagens" [ref=e25] [cursor=pointer]:
+              - /url: "#homenagens"
+          - listitem [ref=e26]:
+            - link "Primeiros passos" [ref=e27] [cursor=pointer]:
+              - /url: "#primeiros-passos"
+          - listitem [ref=e28]:
+            - link "Serviços" [ref=e29] [cursor=pointer]:
+              - /url: "#servicos"
+          - listitem [ref=e30]:
+            - link "Planos" [ref=e31] [cursor=pointer]:
+              - /url: "#planos"
+          - listitem [ref=e32]:
+            - link "Pax Pet" [ref=e33] [cursor=pointer]:
+              - /url: "#pax-pet"
+          - listitem [ref=e34]:
+            - link "Unidades" [ref=e35] [cursor=pointer]:
+              - /url: "#unidades"
+          - listitem [ref=e36]:
+            - link "Dúvidas" [ref=e37] [cursor=pointer]:
+              - /url: "#duvidas"
+        - link " Ligar 24h" [ref=e38] [cursor=pointer]:
+          - /url: tel:+551936571645
+          - generic [ref=e39]: 
+          - text: Ligar 24h
+        - text: 
+      - text: 
+  - main [ref=e40]:
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - heading [level=1] [ref=e44]:
+          - text: Homenageando
+          - emphasis [ref=e45]: histórias
+          - text: de vidas.
+        - paragraph [ref=e46]: Assistência funeral 24 horas e planos para a família e para o seu pet, com o cuidado que cada despedida merece.
+        - generic [ref=e47]:
+          - link " Ligar 24h" [ref=e48] [cursor=pointer]:
+            - /url: tel:+551936571645
+            - generic [ref=e49]: 
+            - text: Ligar 24h
+          - link "Conhecer os planos" [ref=e50] [cursor=pointer]:
+            - /url: "#planos"
+      - img "Mãe e filha se abraçando com carinho, à luz da janela" [ref=e53]
+    - generic [ref=e55]:
+      - link " Perdi alguém agora O que fazer nas primeiras horas " [ref=e56] [cursor=pointer]:
+        - /url: "#primeiros-passos"
+        - generic [ref=e57]: 
+        - generic [ref=e59]:
+          - strong [ref=e60]: Perdi alguém agora
+          - text: O que fazer nas primeiras horas
+        - generic [ref=e61]: 
+      - link " Homenagens Velórios, horários e coroas de flores " [ref=e62] [cursor=pointer]:
+        - /url: "#homenagens"
+        - generic [ref=e63]: 
+        - generic [ref=e65]:
+          - strong [ref=e66]: Homenagens
+          - text: Velórios, horários e coroas de flores
+        - generic [ref=e67]: 
+      - link " Quero me planejar Planos para a família e para pets " [ref=e68] [cursor=pointer]:
+        - /url: "#planos"
+        - generic [ref=e69]: 
+        - generic [ref=e71]:
+          - strong [ref=e72]: Quero me planejar
+          - text: Planos para a família e para pets
+        - generic [ref=e73]: 
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - heading "Homenagens" [level=2] [ref=e77]
+        - paragraph [ref=e79]: Informações de velório e sepultamento, para que amigos e familiares possam se despedir.
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - article [ref=e82]:
+            - img "Retrato da Sra. Elza Merli" [ref=e84]
+            - generic [ref=e85]:
+              - paragraph [ref=e86]: Nota de falecimento
+              - heading "Sra. Elza Merli" [level=3] [ref=e87]
+              - paragraph [ref=e88]:
+                - text: Carinhosamente conhecida por
+                - strong [ref=e89]: Tia Elza
+              - generic [ref=e90]:
+                - generic [ref=e91]:
+                  - term [ref=e92]: Velório
+                  - definition [ref=e93]: Velório Municipal de São José do Rio Pardo
+                - generic [ref=e94]:
+                  - term [ref=e95]: Início das homenagens
+                  - definition [ref=e96]: 02/10/2026 às 7h
+                - generic [ref=e97]:
+                  - term [ref=e98]: Sepultamento
+                  - definition [ref=e99]: 02/10/2026 às 14h
+                - generic [ref=e100]:
+                  - term [ref=e101]: Local
+                  - definition [ref=e102]: Cemitério Municipal de São José do Rio Pardo
+              - generic [ref=e103]:
+                - link " Enviar coroa de flores" [ref=e104] [cursor=pointer]:
+                  - /url: https://wa.me/5519983389779?text=Ol%C3%A1%2C%20quero%20enviar%20uma%20coroa%20de%20flores%20para%20a%20homenagem%20da%20Sra.%20Elza%20Merli.
+                  - generic [ref=e105]: 
+                  - text: Enviar coroa de flores
+                - link " Ver local" [ref=e106] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/search/?api=1&query=Vel%C3%B3rio%20Municipal%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Pardo
+                  - generic [ref=e107]: 
+                  - text: Ver local
+          - link "Ver todas as homenagens " [ref=e108] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e109]: Ver todas as homenagens
+            - generic [ref=e110]: 
+        - complementary [ref=e111]:
+          - heading "Preste sua homenagem com uma coroa de flores" [level=3] [ref=e112]
+          - paragraph [ref=e113]: Entregamos no local do velório, com faixa personalizada.
+          - list [ref=e114]:
+            - listitem [ref=e115]: Chame no WhatsApp e diga o nome da pessoa homenageada.
+            - listitem [ref=e116]: Escolha o modelo da coroa e escreva a mensagem da faixa.
+            - listitem [ref=e117]: Nós entregamos no velório, antes do início das homenagens.
+          - link " Encomendar pelo WhatsApp" [ref=e118] [cursor=pointer]:
+            - /url: https://wa.me/5519983389779?text=Ol%C3%A1%2C%20quero%20encomendar%20uma%20coroa%20de%20flores.
+            - generic [ref=e119]: 
+            - text: Encomendar pelo WhatsApp
+    - generic [ref=e121]:
+      - generic [ref=e122]:
+        - heading "Perdeu alguém? A família não precisa enfrentar tudo sozinha." [level=2] [ref=e124]
+        - list [ref=e126]:
+          - listitem [ref=e127]:
+            - generic [ref=e128]:
+              - heading "Ligue para o plantão" [level=3] [ref=e129]
+              - paragraph [ref=e130]: Atendemos 24 horas pelo (19) 3657-1645. Explicamos cada etapa com calma e vamos até você.
+          - listitem [ref=e131]:
+            - generic [ref=e132]:
+              - heading "A documentação também faz parte da despedida" [level=3] [ref=e133]
+              - paragraph [ref=e134]: Certidões, autorizações e registros precisam ser organizados com atenção. Cuidamos disso junto com a família.
+          - listitem [ref=e135]:
+            - generic [ref=e136]:
+              - heading "Separe os documentos pessoais" [level=3] [ref=e137]
+              - paragraph [ref=e138]: RG e CPF da pessoa falecida e certidão de nascimento ou casamento.
+          - listitem [ref=e139]:
+            - generic [ref=e140]:
+              - heading "Deixe o restante conosco" [level=3] [ref=e141]
+              - paragraph [ref=e142]: Remoção, preparação, velório, sepultamento ou cremação, e a homenagem nas nossas redes, se a família desejar.
+        - generic [ref=e143]:
+          - link " Ligar agora" [ref=e144] [cursor=pointer]:
+            - /url: tel:+551936571645
+            - generic [ref=e145]: 
+            - text: Ligar agora
+          - link " Chamar no WhatsApp" [ref=e146] [cursor=pointer]:
+            - /url: https://wa.me/5519983389779?text=Ol%C3%A1%2C%20preciso%20de%20atendimento%20agora.
+            - generic [ref=e147]: 
+            - text: Chamar no WhatsApp
+      - img "Atendente da Pax orientando uma senhora com a documentação" [ref=e151]
+    - generic [ref=e153]:
+      - generic [ref=e154]:
+        - heading "Cuidado em cada detalhe" [level=2] [ref=e155]
+        - paragraph [ref=e157]: Da primeira ligação à última homenagem, organizamos tudo para a família.
+      - generic [ref=e158]:
+        - article [ref=e159]:
+          - generic [ref=e160]: 
+          - heading "Velório e cerimônia" [level=3] [ref=e161]
+          - paragraph [ref=e162]: Ornamentação com flores naturais, cerimônia ecumênica e acolhimento à família durante toda a homenagem.
+        - article [ref=e163]:
+          - generic [ref=e164]: 
+          - heading "Cremação" [level=3] [ref=e165]
+          - paragraph [ref=e166]: Acompanhamento completo e entrega das cinzas à família.
+        - article [ref=e167]:
+          - generic [ref=e168]: 
+          - heading "Sepultamento" [level=3] [ref=e169]
+          - paragraph [ref=e170]: Organização junto aos cemitérios da região.
+        - article [ref=e171]:
+          - generic [ref=e172]: 
+          - heading "Traslado" [level=3] [ref=e173]
+          - paragraph [ref=e174]: Transporte para outras cidades e estados, com todas as autorizações.
+        - article [ref=e175]:
+          - generic [ref=e176]: 
+          - heading "Documentação" [level=3] [ref=e177]
+          - paragraph [ref=e178]: Certidão de óbito, liberações e registros em cartório.
+        - article [ref=e179]:
+          - generic [ref=e180]: 
+          - heading "Coroas de flores" [level=3] [ref=e181]
+          - paragraph [ref=e182]: Modelos variados, com faixa personalizada e entrega no velório.
+        - article [ref=e183]:
+          - generic [ref=e184]: 
+          - heading "Nota de falecimento" [level=3] [ref=e185]
+          - paragraph [ref=e186]: Divulgação do velório nas redes da Pax, quando a família autoriza.
+    - generic [ref=e188]:
+      - generic [ref=e189]:
+        - heading "Planos para cuidar de quem você ama" [level=2] [ref=e190]
+        - paragraph [ref=e192]: Tranquilidade para a família hoje, para que ninguém precise se preocupar depois.
+      - generic [ref=e193]:
+        - article [ref=e194]:
+          - heading "Pax Essencial" [level=3] [ref=e195]
+          - paragraph [ref=e196]: Titular e cônjuge
+          - paragraph [ref=e197]: R$ 39,90/mês
+          - list [ref=e198]:
+            - listitem [ref=e199]:
+              - generic [ref=e200]: 
+              - text: Atendimento 24 horas
+            - listitem [ref=e201]:
+              - generic [ref=e202]: 
+              - text: Urna e ornamentação
+            - listitem [ref=e203]:
+              - generic [ref=e204]: 
+              - text: Remoção na região
+            - listitem [ref=e205]:
+              - generic [ref=e206]: 
+              - text: Toda a documentação
+          - link "Quero este plano" [ref=e207] [cursor=pointer]:
+            - /url: https://wa.me/5519983389779?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20plano%20Pax%20Essencial.
+        - article [ref=e208]:
+          - generic [ref=e209]: Mais escolhido
+          - heading "Pax Família" [level=3] [ref=e210]
+          - paragraph [ref=e211]: Titular e até 6 dependentes
+          - paragraph [ref=e212]: R$ 69,90/mês
+          - list [ref=e213]:
+            - listitem [ref=e214]:
+              - generic [ref=e215]: 
+              - text: Tudo do Pax Essencial
+            - listitem [ref=e216]:
+              - generic [ref=e217]: 
+              - text: Coroa de flores inclusa
+            - listitem [ref=e218]:
+              - generic [ref=e219]: 
+              - text: Cremação ou sepultamento
+            - listitem [ref=e220]:
+              - generic [ref=e221]: 
+              - text: Traslado estendido
+            - listitem [ref=e222]:
+              - generic [ref=e223]: 
+              - text: Benefícios nos parceiros Pax
+          - link "Quero este plano" [ref=e224] [cursor=pointer]:
+            - /url: https://wa.me/5519983389779?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20plano%20Pax%20Fam%C3%ADlia.
+        - article [ref=e225]:
+          - heading "Pax Completo" [level=3] [ref=e226]
+          - paragraph [ref=e227]: Família ampliada, com pais e sogros
+          - paragraph [ref=e228]: R$ 109,90/mês
+          - list [ref=e229]:
+            - listitem [ref=e230]:
+              - generic [ref=e231]: 
+              - text: Tudo do Pax Família
+            - listitem [ref=e232]:
+              - generic [ref=e233]: 
+              - text: Traslado nacional
+            - listitem [ref=e234]:
+              - generic [ref=e235]: 
+              - text: Cerimônia personalizada
+            - listitem [ref=e236]:
+              - generic [ref=e237]: 
+              - text: Apoio à família no luto
+          - link "Quero este plano" [ref=e238] [cursor=pointer]:
+            - /url: https://wa.me/5519983389779?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20plano%20Pax%20Completo.
+      - paragraph [ref=e239]: Consulte carências e condições completas com nossa equipe.
+    - generic [ref=e241]:
+      - img "Menina abraçando seu cachorro sob a luz do fim de tarde" [ref=e244]
+      - generic [ref=e245]:
+        - generic [ref=e246]:
+          - generic [ref=e247]:
+            - generic [ref=e248]: 
+            - text: Pax Pet
+          - heading "Cuidado e carinho para quem também faz parte da família." [level=2] [ref=e249]
+          - paragraph [ref=e251]: Uma despedida respeitosa para cães e gatos, com remoção em casa ou na clínica.
+        - generic [ref=e252]:
+          - article [ref=e253]:
+            - heading "Pax Pet" [level=3] [ref=e254]
+            - paragraph [ref=e255]: R$ 19,90/mês
+            - list [ref=e256]:
+              - listitem [ref=e257]:
+                - generic [ref=e258]: 
+                - text: Remoção em casa ou na clínica
+              - listitem [ref=e259]:
+                - generic [ref=e260]: 
+                - text: Cremação coletiva
+              - listitem [ref=e261]:
+                - generic [ref=e262]: 
+                - text: Certificado de cremação
+            - link "Quero este plano" [ref=e263] [cursor=pointer]:
+              - /url: https://wa.me/5519983389779?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20Pax%20Pet.
+          - article [ref=e264]:
+            - heading "Pax Pet Memória" [level=3] [ref=e265]
+            - paragraph [ref=e266]: R$ 34,90/mês
+            - list [ref=e267]:
+              - listitem [ref=e268]:
+                - generic [ref=e269]: 
+                - text: Cremação individual com devolução das cinzas
+              - listitem [ref=e270]:
+                - generic [ref=e271]: 
+                - text: Urna e impressão da patinha
+              - listitem [ref=e272]:
+                - generic [ref=e273]: 
+                - text: Momento de despedida para a família
+            - link "Quero este plano" [ref=e274] [cursor=pointer]:
+              - /url: https://wa.me/5519983389779?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20Pax%20Pet%20Mem%C3%B3ria.
+        - generic [ref=e275]:
+          - generic [ref=e276]: 
+          - paragraph [ref=e277]:
+            - strong [ref=e278]: "Parceiros Pax Pet:"
+            - text: benefícios especiais para clientes em pet shops da região, como a Star Pet. Mais parceiros estão chegando.
+    - generic [ref=e280]:
+      - generic [ref=e281]:
+        - heading "Onde estamos" [level=2] [ref=e282]
+        - paragraph [ref=e284]: Atendimento 24 horas em todas as unidades.
+      - generic [ref=e285]:
+        - article [ref=e286]:
+          - generic [ref=e287]: Matriz
+          - paragraph [ref=e288]: São José do Rio Pardo - SP
+          - list [ref=e289]:
+            - listitem [ref=e290]:
+              - generic [ref=e291]: 
+              - generic [ref=e292]: Endereço da matriz
+            - listitem [ref=e293]:
+              - generic [ref=e294]: 
+              - link "(19) 3657-1645" [ref=e295] [cursor=pointer]:
+                - /url: tel:+551936571645
+            - listitem [ref=e296]:
+              - generic [ref=e297]: 
+              - link "(19) 98338-9779" [ref=e298] [cursor=pointer]:
+                - /url: https://wa.me/5519983389779
+          - link " Como chegar" [ref=e299] [cursor=pointer]:
+            - /url: https://www.google.com/maps/search/?api=1&query=Grupo%20Pax%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Pardo
+            - generic [ref=e300]: 
+            - text: Como chegar
+        - article [ref=e301]:
+          - paragraph [ref=e302]: Cidade da unidade
+          - list [ref=e303]:
+            - listitem [ref=e304]:
+              - generic [ref=e305]: 
+              - generic [ref=e306]: Endereço
+            - listitem [ref=e307]:
+              - generic [ref=e308]: 
+              - link "(35) 98811-2852" [ref=e309] [cursor=pointer]:
+                - /url: tel:+5535988112852
+        - article [ref=e310]:
+          - paragraph [ref=e311]: Cidade da unidade
+          - list [ref=e312]:
+            - listitem [ref=e313]:
+              - generic [ref=e314]: 
+              - generic [ref=e315]: Endereço
+            - listitem [ref=e316]:
+              - generic [ref=e317]: 
+              - generic [ref=e318]: Telefone
+    - generic [ref=e320]:
+      - generic [ref=e321]:
+        - heading "Cuidando de cada detalhe da vida de toda a família." [level=2] [ref=e322]
+        - paragraph [ref=e324]: O Grupo Pax existe para que nenhuma família passe sozinha por um dos momentos mais delicados da vida.
+        - paragraph [ref=e325]: Acompanhamos cada despedida com respeito e atenção aos detalhes, e acreditamos que toda história merece ser lembrada com carinho. Por isso, além do atendimento funeral, oferecemos planos, homenagens e uma rede de parceiros que cuida da família no dia a dia.
+      - generic [ref=e326]:
+        - generic [ref=e327]:
+          - strong [ref=e328]: Carinho
+          - generic [ref=e329]: Acolhemos cada família como se fosse a nossa.
+        - generic [ref=e330]:
+          - strong [ref=e331]: Respeito
+          - generic [ref=e332]: Pela história, pela fé e pelas escolhas de cada um.
+        - generic [ref=e333]:
+          - strong [ref=e334]: Confiança
+          - generic [ref=e335]: Preços claros e compromisso cumprido.
+        - generic [ref=e336]:
+          - strong [ref=e337]: Atenção
+          - generic [ref=e338]: Presentes em cada detalhe, a qualquer hora.
+    - generic [ref=e340]:
+      - generic [ref=e341]:
+        - heading "Dúvidas frequentes" [level=2] [ref=e342]
+        - paragraph [ref=e344]: Não encontrou sua resposta? Fale com a gente a qualquer hora.
+        - link " Perguntar no WhatsApp" [ref=e345] [cursor=pointer]:
+          - /url: https://wa.me/5519983389779?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida.
+          - generic [ref=e346]: 
+          - text: Perguntar no WhatsApp
+      - generic [ref=e347]:
+        - group [ref=e348]:
+          - generic "O que fazer logo após o falecimento? " [ref=e349] [cursor=pointer]:
+            - text: O que fazer logo após o falecimento?
+            - generic [ref=e350]: 
+          - paragraph [ref=e351]: Ligue para o plantão no (19) 3657-1645. Orientamos sobre a declaração de óbito, fazemos a remoção e cuidamos dos próximos passos junto com a família.
+        - group [ref=e352]:
+          - generic "Vocês atendem quem não tem plano? " [ref=e353] [cursor=pointer]:
+            - text: Vocês atendem quem não tem plano?
+            - generic [ref=e354]: 
+        - group [ref=e355]:
+          - generic "Como publico uma nota de falecimento? " [ref=e356] [cursor=pointer]:
+            - text: Como publico uma nota de falecimento?
+            - generic [ref=e357]: 
+        - group [ref=e358]:
+          - generic "Como envio uma coroa de flores? " [ref=e359] [cursor=pointer]:
+            - text: Como envio uma coroa de flores?
+            - generic [ref=e360]: 
+        - group [ref=e361]:
+          - generic "Qual é a carência dos planos? " [ref=e362] [cursor=pointer]:
+            - text: Qual é a carência dos planos?
+            - generic [ref=e363]: 
+        - group [ref=e364]:
+          - generic "O Pax Pet atende quais animais? " [ref=e365] [cursor=pointer]:
+            - text: O Pax Pet atende quais animais?
+            - generic [ref=e366]: 
+    - generic [ref=e369]:
+      - generic [ref=e370]:
+        - heading "Estamos aqui, a qualquer hora." [level=2] [ref=e371]
+        - paragraph [ref=e372]: Plantão 24 horas, todos os dias, inclusive feriados.
+      - generic [ref=e373]:
+        - link " (19) 3657-1645" [ref=e374] [cursor=pointer]:
+          - /url: tel:+551936571645
+          - generic [ref=e375]: 
+          - text: (19) 3657-1645
+        - link " WhatsApp" [ref=e376] [cursor=pointer]:
+          - /url: https://wa.me/5519983389779
+          - generic [ref=e377]: 
+          - text: WhatsApp
+  - contentinfo [ref=e378]:
+    - generic [ref=e379]:
+      - generic [ref=e380]:
+        - generic [ref=e381]:
+          - link "Grupo Pax, voltar ao início" [ref=e382] [cursor=pointer]:
+            - /url: "#inicio"
+            - generic [ref=e383]:
+              - generic [ref=e384]: PaxGRUPO
+              - generic [ref=e385]: Assistência Funeral
+            - generic [aria-hidden] [ref=e386]: 
+          - paragraph [ref=e387]: Homenageando Histórias de Vidas
+        - generic [ref=e388]:
+          - paragraph [ref=e389]: Atendimento 24 horas
+          - list [ref=e390]:
+            - listitem [ref=e391]:
+              - link "(19) 3657-1645" [ref=e392] [cursor=pointer]:
+                - /url: tel:+551936571645
+            - listitem [ref=e393]:
+              - link "WhatsApp (19) 98338-9779" [ref=e394] [cursor=pointer]:
+                - /url: https://wa.me/5519983389779
+            - listitem [ref=e395]:
+              - link "(35) 98811-2852" [ref=e396] [cursor=pointer]:
+                - /url: tel:+5535988112852
+        - generic [ref=e397]:
+          - paragraph [ref=e398]: Navegação
+          - list [ref=e399]:
+            - listitem [ref=e400]:
+              - link "Homenagens" [ref=e401] [cursor=pointer]:
+                - /url: "#homenagens"
+            - listitem [ref=e402]:
+              - link "Planos" [ref=e403] [cursor=pointer]:
+                - /url: "#planos"
+            - listitem [ref=e404]:
+              - link "Pax Pet" [ref=e405] [cursor=pointer]:
+                - /url: "#pax-pet"
+            - listitem [ref=e406]:
+              - link "Dúvidas" [ref=e407] [cursor=pointer]:
+                - /url: "#duvidas"
+      - generic [ref=e408]:
+        - generic [ref=e409]: © 2026 Grupo Pax Assistência Funeral
+        - generic [ref=e410]: "Foto do Pax Pet: Basile Morin (CC BY-SA 4.0), via Wikimedia Commons."
+  - link "Falar pelo WhatsApp" [ref=e411] [cursor=pointer]:
+    - /url: https://wa.me/5519983389779?text=Ol%C3%A1%2C%20preciso%20de%20atendimento.
+    - generic [ref=e412]: 
+    - generic: Fale conosco
