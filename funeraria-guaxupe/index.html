@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Versões do site | Funerária Pax Guaxupé</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { --bg: #f4f7fb; --ink: #0e2440; --muted: #475b72; --line: #d3deea; --gold: #8a6a22; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1.0625rem/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 1120px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { margin: 0; font-size: clamp(2rem, 1.4rem + 2vw, 2.75rem); line-height: 1.1; }
+  .lead { margin: 12px 0 0; color: var(--muted); max-width: 60ch; }
+  .versions { display: grid; gap: 24px; margin-top: 40px; }
+  .version { display: grid; gap: 16px; padding: 24px; border: 1px solid var(--line); border-radius: 16px; background: #fff; }
+  .version h2 { margin: 0; font-size: 1.5rem; }
+  .version h2 span { color: var(--gold); font-weight: 600; }
+  .version p { margin: 0; color: var(--muted); }
+  .version ul { margin: 0; padding-left: 1.2em; color: var(--muted); }
+  .frame { position: relative; aspect-ratio: 16 / 10; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--bg); }
+  .frame iframe { position: absolute; top: 0; left: 0; width: 250%; height: 250%; border: 0; transform: scale(0.4); transform-origin: 0 0; pointer-events: none; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .actions a { display: inline-flex; align-items: center; min-height: 48px; padding: 10px 18px; border-radius: 12px; background: var(--ink); color: #fff; font-weight: 600; text-decoration: none; }
+  .actions a.alt { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+  .data { margin-top: 32px; }
+  .data a { color: var(--ink); font-weight: 600; }
+  @media (min-width: 900px) { .versions { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 1300px) { main { max-width: 1400px; } .versions { grid-template-columns: repeat(3, 1fr); } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Funerária Pax Guaxupé: versões do site</h1>
+  <p class="lead">Cada iteração de design vira uma versão nova, e as anteriores ficam preservadas para comparação. Abra cada uma no celular e no computador.</p>
+
+  <div class="versions">
+    <article class="version">
+      <h2><span>v3</span> Histórias</h2>
+      <div class="frame"><iframe src="v3/index.html" title="Prévia da versão 3" loading="lazy" tabindex="-1"></iframe></div>
+      <p>Feita do zero, com outra linguagem: moderna, cinematográfica e com movimento guiado pelo scroll.</p>
+      <ul>
+        <li>Textos totalmente novos: "Cuidamos de tudo. Você cuida de quem ama."</li>
+        <li>Fonte sans (Satoshi), sem troca de tema e sem formulários</li>
+        <li>Novos recortes de imagem: fotos dentro do título, panorama da família, detalhe do abraço</li>
+        <li>Navegação em pílula flutuante, grade bento, manifesto que acende palavra por palavra (GSAP)</li>
+        <li>Jornada "O que acontece depois que você liga" com trilha de progresso</li>
+        <li>Plano em números grandes, Pax Pet com faixa em movimento, cidades em lista tipográfica</li>
+      </ul>
+      <div class="actions"><a href="v3/index.html">Abrir v3</a></div>
+    </article>
+
+    <article class="version">
+      <h2><span>v2</span> Vigília</h2>
+      <div class="frame"><iframe src="v2/index.html" title="Prévia da versão 2" loading="lazy" tabindex="-1"></iframe></div>
+      <p>Mais ousada e interativa: a funerária que está acordada quando você precisa.</p>
+      <ul>
+        <li>Tema diurno e noturno automático pelo horário de Guaxupé, com relógio do plantão ao vivo</li>
+        <li>Tipografia editorial (Bodoni Moda) e a pomba da logo como elemento gráfico</li>
+        <li>Roteador "Como podemos ajudar agora?" com 4 caminhos</li>
+        <li>Roteiro interativo "Perdeu alguém?", com progresso salvo no aparelho e opção de imprimir</li>
+        <li>Simulador "Monte a proteção da sua família", que envia a composição pelo WhatsApp</li>
+        <li>Mapa das 6 cidades com abas acessíveis; FAQ com Schema FAQPage para SEO</li>
+      </ul>
+      <div class="actions"><a href="v2/index.html">Abrir v2</a></div>
+    </article>
+
+    <article class="version">
+      <h2><span>v1</span> Placa</h2>
+      <div class="frame"><iframe src="v1/index.html" title="Prévia da versão 1" loading="lazy" tabindex="-1"></iframe></div>
+      <p>Institucional e sóbria: moldura dourada inspirada em placas, navegação clássica por seções.</p>
+      <ul>
+        <li>Tipografia Marcellus e Figtree, tema claro</li>
+        <li>Guia em 3 passos, cards comparativos de adesão</li>
+        <li>Mapa do Google Maps só após consentimento</li>
+        <li>Formulário que monta a mensagem do WhatsApp</li>
+      </ul>
+      <div class="actions"><a href="v1/index.html">Abrir v1</a></div>
+    </article>
+  </div>
+
+  <p class="data">Dados levantados e pendências: <a href="dados-empresa.md">dados-empresa.md</a></p>
+</main>
+</body>
+</html>
