@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Funerária em Guaxupé 24h e Plano Funerário Familiar | Grupo Pax</title>
+<meta name="description" content="Funerária Pax em Guaxupé-MG com plantão 24 horas, capela velatória, translado, cremação e Plano Familiar Pax: 1 titular + 11 dependentes por R$ 49,90/mês. Ligue (19) 3657-1645.">
+<meta name="theme-color" content="#0b1a2e" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f4f7fb">
+<meta name="format-detection" content="telephone=yes">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Grupo Pax Assistência Funeral">
+<meta property="og:title" content="Funerária Pax Guaxupé: estamos acordados com você">
+<meta property="og:description" content="Plantão 24 horas, capela velatória em Guaxupé e Plano Familiar Pax. Você não está sozinho.">
+<meta property="og:image" content="img/og-grupo-pax.jpg">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/bodoni-moda-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/bodoni-moda-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/albert-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/abraco-774.webp" imagesrcset="img/abraco-480.webp 480w, img/abraco-774.webp 774w" imagesizes="(min-width: 1024px) 46vw, 100vw">
+<script>
+  /* Tema antes da pintura: noite entre 19h e 6h no horário de Guaxupé, ou a escolha salva do visitante. */
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem("pax-theme"); } catch (e) {}
+    if (t !== "day" && t !== "night") {
+      var h = Number(new Intl.DateTimeFormat("pt-BR", { hour: "2-digit", hour12: false, timeZone: "America/Sao_Paulo" }).format(new Date()));
+      t = h >= 19 || h < 6 ? "night" : "day";
+    }
+    document.documentElement.setAttribute("data-theme", t);
+  })();
+</script>
+<link rel="stylesheet" href="css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "#grupo-pax",
+      "name": "Grupo Pax Assistência Funeral",
+      "alternateName": ["Regional Pax", "Funerária Pax Guaxupé"],
+      "taxID": "22.164.662/0001-30",
+      "slogan": "Homenageando histórias de vida",
+      "foundingDate": "2015-03-31",
+      "email": "notafuneralgrupopax@gmail.com",
+      "telephone": "+55-19-3657-1645",
+      "logo": "img/logo-pax.png",
+      "areaServed": ["Guaxupé-MG", "Tapiratiba-SP", "São José do Rio Pardo-SP", "Divinolândia-SP", "Machado-MG", "Botelhos-MG"],
+      "sameAs": [
+        "https://www.instagram.com/grupopaxassistenciafuneral/",
+        "https://www.facebook.com/funeraria.guaxupe/"
+      ],
+      "makesOffer": {
+        "@type": "Offer",
+        "name": "Plano Familiar Pax",
+        "description": "1 titular e até 11 dependentes, sem limite de idade e sem vínculo familiar, até 3 pets. Carência de 90 dias; transferência sem carência e sem taxa de adesão.",
+        "price": "49.90",
+        "priceCurrency": "BRL",
+        "priceSpecification": { "@type": "UnitPriceSpecification", "price": "49.90", "priceCurrency": "BRL", "unitText": "mês" }
+      }
+    },
+    {
+      "@type": "FuneralHome",
+      "@id": "#unidade-guaxupe",
+      "name": "Funerária Pax Guaxupé",
+      "parentOrganization": { "@id": "#grupo-pax" },
+      "image": "img/og-grupo-pax.jpg",
+      "telephone": "+55-35-98811-2852",
+      "priceRange": "$$",
+      "address": { "@type": "PostalAddress", "streetAddress": "Av. Dona Floriana, 66, Centro", "addressLocality": "Guaxupé", "addressRegion": "MG", "postalCode": "37800-000", "addressCountry": "BR" },
+      "geo": { "@type": "GeoCoordinates", "latitude": -21.3114526, "longitude": -46.7080253 },
+      "hasMap": "https://maps.google.com/?cid=10318236687066624085",
+      "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" }
+    },
+    {
+      "@type": "FuneralHome",
+      "@id": "#unidade-tapiratiba",
+      "name": "Grupo Pax Assistência Funeral (matriz)",
+      "parentOrganization": { "@id": "#grupo-pax" },
+      "telephone": "+55-19-3657-1645",
+      "address": { "@type": "PostalAddress", "streetAddress": "Rua Caconde, 159, Centro", "addressLocality": "Tapiratiba", "addressRegion": "SP", "postalCode": "13760-000", "addressCountry": "BR" },
+      "geo": { "@type": "GeoCoordinates", "latitude": -21.4700753, "longitude": -46.7472472 },
+      "hasMap": "https://maps.google.com/?cid=15442840601589961927",
+      "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" }
+    },
+    {
+      "@type": "FuneralHome",
+      "@id": "#unidade-sao-jose-do-rio-pardo",
+      "name": "Funerária Grupo Pax São José do Rio Pardo",
+      "parentOrganization": { "@id": "#grupo-pax" },
+      "telephone": "+55-19-98338-9779",
+      "address": { "@type": "PostalAddress", "streetAddress": "R. Cândido Faria, 229, Centro", "addressLocality": "São José do Rio Pardo", "addressRegion": "SP", "postalCode": "13720-000", "addressCountry": "BR" },
+      "geo": { "@type": "GeoCoordinates", "latitude": -21.6004107, "longitude": -46.8948744 },
+      "hasMap": "https://maps.google.com/?cid=18204312528144402007",
+      "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" }
+    },
+    {
+      "@type": "FuneralHome",
+      "@id": "#unidade-divinolandia",
+      "name": "Grupo Pax Assistência Funeral Divinolândia",
+      "parentOrganization": { "@id": "#grupo-pax" },
+      "telephone": "+55-19-3657-1645",
+      "address": { "@type": "PostalAddress", "streetAddress": "Praça Nossa Senhora do Rosário, 30, Centro", "addressLocality": "Divinolândia", "addressRegion": "SP", "postalCode": "13780-000", "addressCountry": "BR" },
+      "geo": { "@type": "GeoCoordinates", "latitude": -21.6617847, "longitude": -46.7336245 },
+      "hasMap": "https://maps.google.com/?cid=14780968741551569630",
+      "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Qual o primeiro passo quando alguém da família falece?", "acceptedAnswer": { "@type": "Answer", "text": "Ligue para o plantão 24 horas do Grupo Pax: (19) 3657-1645. Nossa equipe orienta sobre os documentos e cuida da remoção, da preparação, do velório e do sepultamento ou da cremação." } },
+        { "@type": "Question", "name": "Qual é a carência do Plano Familiar Pax?", "acceptedAnswer": { "@type": "Answer", "text": "A carência é de 90 dias. Para quem transfere o plano de outra empresa, não há carência nem taxa de adesão." } },
+        { "@type": "Question", "name": "O plano funerário tem limite de idade?", "acceptedAnswer": { "@type": "Answer", "text": "Não. O Plano Familiar Pax não tem limite de idade e não exige vínculo familiar: você escolhe quem deseja proteger." } },
+        { "@type": "Question", "name": "Quantas pessoas o Plano Familiar Pax cobre e quanto custa?", "acceptedAnswer": { "@type": "Answer", "text": "1 titular e até 11 dependentes, além de até 3 pets, por R$ 49,90 por mês." } },
+        { "@type": "Question", "name": "Posso trazer meu plano de outra funerária?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Na transferência de plano não há carência nem taxa de adesão." } },
+        { "@type": "Question", "name": "O Grupo Pax faz cremação?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. A cremação pode estar incluída no plano ou ser contratada à parte. Para pets, oferecemos cremação individual ou coletiva, com devolução das cinzas em urna personalizada." } },
+        { "@type": "Question", "name": "Onde fica a funerária do Grupo Pax em Guaxupé?", "acceptedAnswer": { "@type": "Answer", "text": "Na Av. Dona Floriana, 66, Centro, Guaxupé-MG, com capela velatória própria e atendimento 24 horas." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-arrow-down-right" viewBox="0 0 256 256"><path d="M200,88V192a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h84.69L58.34,69.66A8,8,0,0,1,69.66,58.34L184,172.69V88a8,8,0,0,1,16,0Z"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></symbol>
+  <symbol id="i-arrow-up-right" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></symbol>
+  <symbol id="i-caret-down" viewBox="0 0 256 256"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></symbol>
+  <symbol id="i-cat" viewBox="0 0 256 256"><path d="M96,140a12,12,0,1,1-12-12A12,12,0,0,1,96,140Zm76-12a12,12,0,1,0,12,12A12,12,0,0,0,172,128Zm60-80v88c0,52.93-46.65,96-104,96S24,188.93,24,136V48A16,16,0,0,1,51.31,36.69c.14.14.26.27.38.41L69,57a111.22,111.22,0,0,1,118.1,0L204.31,37.1c.12-.14.24-.27.38-.41A16,16,0,0,1,232,48Zm-16,0-21.56,24.8A8,8,0,0,1,183.63,74,88.86,88.86,0,0,0,168,64.75V88a8,8,0,1,1-16,0V59.05a97.43,97.43,0,0,0-16-2.72V88a8,8,0,1,1-16,0V56.33a97.43,97.43,0,0,0-16,2.72V88a8,8,0,1,1-16,0V64.75A88.86,88.86,0,0,0,72.37,74a8,8,0,0,1-10.81-1.17L40,48v88c0,41.66,35.21,76,80,79.67V195.31l-13.66-13.66a8,8,0,0,1,11.32-11.31L128,180.68l10.34-10.34a8,8,0,0,1,11.32,11.31L136,195.31v20.36c44.79-3.69,80-38,80-79.67Z"/></symbol>
+  <symbol id="i-check-circle" viewBox="0 0 256 256"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 256 256"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/></symbol>
+  <symbol id="i-dog" viewBox="0 0 256 256"><path d="M239.71,125l-16.42-88a16,16,0,0,0-19.61-12.58l-.31.09L150.85,40h-45.7L52.63,24.56l-.31-.09A16,16,0,0,0,32.71,37.05L16.29,125a15.77,15.77,0,0,0,9.12,17.52A16.26,16.26,0,0,0,32.12,144,15.48,15.48,0,0,0,40,141.84V184a40,40,0,0,0,40,40h96a40,40,0,0,0,40-40V141.85a15.5,15.5,0,0,0,7.87,2.16,16.31,16.31,0,0,0,6.72-1.47A15.77,15.77,0,0,0,239.71,125ZM32,128h0L48.43,40,90.5,52.37Zm144,80H136V195.31l13.66-13.65a8,8,0,0,0-11.32-11.32L128,180.69l-10.34-10.35a8,8,0,0,0-11.32,11.32L120,195.31V208H80a24,24,0,0,1-24-24V123.11L107.92,56h40.15L200,123.11V184A24,24,0,0,1,176,208Zm48-80L165.5,52.37,207.57,40,224,128ZM104,140a12,12,0,1,1-12-12A12,12,0,0,1,104,140Zm72,0a12,12,0,1,1-12-12A12,12,0,0,1,176,140Z"/></symbol>
+  <symbol id="i-envelope-simple" viewBox="0 0 256 256"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></symbol>
+  <symbol id="i-facebook-logo" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"/></symbol>
+  <symbol id="i-hand-heart" viewBox="0 0 256 256"><path d="M230.33,141.06a24.34,24.34,0,0,0-18.61-4.77C230.5,117.33,240,98.48,240,80c0-26.47-21.29-48-47.46-48A47.58,47.58,0,0,0,156,48.75,47.58,47.58,0,0,0,119.46,32C93.29,32,72,53.53,72,80c0,11,3.24,21.69,10.06,33a31.87,31.87,0,0,0-14.75,8.4L44.69,144H16A16,16,0,0,0,0,160v40a16,16,0,0,0,16,16H120a7.93,7.93,0,0,0,1.94-.24l64-16a6.94,6.94,0,0,0,1.19-.4L226,182.82l.44-.2a24.6,24.6,0,0,0,3.93-41.56ZM119.46,48A31.15,31.15,0,0,1,148.6,67a8,8,0,0,0,14.8,0,31.15,31.15,0,0,1,29.14-19C209.59,48,224,62.65,224,80c0,19.51-15.79,41.58-45.66,63.9l-11.09,2.55A28,28,0,0,0,140,112H100.68C92.05,100.36,88,90.12,88,80,88,62.65,102.41,48,119.46,48ZM16,160H40v40H16Zm203.43,8.21-38,16.18L119,200H56V155.31l22.63-22.62A15.86,15.86,0,0,1,89.94,128H140a12,12,0,0,1,0,24H112a8,8,0,0,0,0,16h32a8.32,8.32,0,0,0,1.79-.2l67-15.41.31-.08a8.6,8.6,0,0,1,6.3,15.9Z"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"/></symbol>
+  <symbol id="i-info" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm16-40a8,8,0,0,1-8,8,16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40A8,8,0,0,1,144,176ZM112,84a12,12,0,1,1,12,12A12,12,0,0,1,112,84Z"/></symbol>
+  <symbol id="i-instagram-logo" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></symbol>
+  <symbol id="i-list" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></symbol>
+  <symbol id="i-map-pin" viewBox="0 0 256 256"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128Z"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 256 256"><path d="M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z"/></symbol>
+  <symbol id="i-navigation-arrow" viewBox="0 0 256 256"><path d="M237.33,106.21,61.41,41l-.16-.05A16,16,0,0,0,40.9,61.25a1,1,0,0,0,.05.16l65.26,175.92A15.77,15.77,0,0,0,121.28,248h.3a15.77,15.77,0,0,0,15-11.29l.06-.2,21.84-78,78-21.84.2-.06a16,16,0,0,0,.62-30.38ZM149.84,144.3a8,8,0,0,0-5.54,5.54L121.3,232l-.06-.17L56,56l175.82,65.22.16.06Z"/></symbol>
+  <symbol id="i-paw-print" viewBox="0 0 256 256"><path d="M212,80a28,28,0,1,0,28,28A28,28,0,0,0,212,80Zm0,40a12,12,0,1,1,12-12A12,12,0,0,1,212,120ZM72,108a28,28,0,1,0-28,28A28,28,0,0,0,72,108ZM44,120a12,12,0,1,1,12-12A12,12,0,0,1,44,120ZM92,88A28,28,0,1,0,64,60,28,28,0,0,0,92,88Zm0-40A12,12,0,1,1,80,60,12,12,0,0,1,92,48Zm72,40a28,28,0,1,0-28-28A28,28,0,0,0,164,88Zm0-40a12,12,0,1,1-12,12A12,12,0,0,1,164,48Zm23.12,100.86a35.3,35.3,0,0,1-16.87-21.14,44,44,0,0,0-84.5,0A35.25,35.25,0,0,1,69,148.82,40,40,0,0,0,88,224a39.48,39.48,0,0,0,15.52-3.13,64.09,64.09,0,0,1,48.87,0,40,40,0,0,0,34.73-72ZM168,208a24,24,0,0,1-9.45-1.93,80.14,80.14,0,0,0-61.19,0,24,24,0,0,1-20.71-43.26,51.22,51.22,0,0,0,24.46-30.67,28,28,0,0,1,53.78,0,51.27,51.27,0,0,0,24.53,30.71A24,24,0,0,1,168,208Z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 256 256"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></symbol>
+  <symbol id="i-printer" viewBox="0 0 256 256"><path d="M214.67,72H200V40a8,8,0,0,0-8-8H64a8,8,0,0,0-8,8V72H41.33C27.36,72,16,82.77,16,96v80a8,8,0,0,0,8,8H56v32a8,8,0,0,0,8,8H192a8,8,0,0,0,8-8V184h32a8,8,0,0,0,8-8V96C240,82.77,228.64,72,214.67,72ZM72,48H184V72H72ZM184,208H72V160H184Zm40-40H200V152a8,8,0,0,0-8-8H64a8,8,0,0,0-8,8v16H32V96c0-4.41,4.19-8,9.33-8H214.67c5.14,0,9.33,3.59,9.33,8Zm-24-52a12,12,0,1,1-12-12A12,12,0,0,1,200,116Z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 256 256"><path d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 256 256"><path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"/></symbol>
+  <symbol id="i-users-three" viewBox="0 0 256 256"><path d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"/></symbol>
+  <symbol id="i-whatsapp-logo" viewBox="0 0 256 256"><path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></symbol>
+</svg>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<div class="watchbar" role="status">
+  <div class="watchbar__inner">
+    <span class="live-dot" aria-hidden="true"></span>
+    <span>Plantão ativo<span class="watchbar__time" data-clock></span></span>
+    <a href="tel:+551936571645">(19) 3657-1645</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#conteudo" aria-label="Grupo Pax Assistência Funeral, início">
+      <picture class="brand__logo brand__logo--day">
+        <source srcset="img/logo-pax.webp" type="image/webp">
+        <img src="img/logo-pax.png" alt="Grupo Pax Assistência Funeral" width="585" height="240">
+      </picture>
+      <picture class="brand__logo brand__logo--night">
+        <source srcset="img/logo-pax-branco.webp" type="image/webp">
+        <img src="img/logo-pax-branco.png" alt="" width="585" height="240">
+      </picture>
+    </a>
+
+    <nav class="main-nav" id="menu" aria-label="Principal">
+      <ul>
+        <li><a href="#agora">Alguém faleceu</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#pax-pet">Pax Pet</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#unidades">Unidades</a></li>
+        <li><a href="#duvidas">Dúvidas</a></li>
+      </ul>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-pressed="false" data-theme-toggle>
+      <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      <span class="visually-hidden" data-theme-label>Usar tema noturno</span>
+    </button>
+
+    <a class="call-btn" href="tel:+551936571645">
+      <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+      <span class="call-btn__long">Ligar 24h</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <svg class="icon icon--open" aria-hidden="true"><use href="#i-list"/></svg>
+      <svg class="icon icon--close" aria-hidden="true"><use href="#i-x"/></svg>
+      <span class="visually-hidden">Abrir menu</span>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__copy">
+      <p class="hero__kicker">Funerária Pax em Guaxupé-MG</p>
+      <h1 id="hero-title" class="hero__title">
+        <span class="line">Você não</span>
+        <span class="line">está <em>sozinho.</em></span>
+      </h1>
+      <p class="hero__live" data-live-message>Nossa equipe está de plantão 24 horas, todos os dias, para orientar sua família em cada etapa.</p>
+      <div class="hero__actions">
+        <a class="btn btn--solid btn--xl" href="tel:+551936571645">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+          <span>Ligar agora <small>(19) 3657-1645</small></span>
+        </a>
+        <a class="btn btn--line btn--xl" href="https://wa.me/551936571645?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Funer%C3%A1ria%20Pax%20Guaxup%C3%A9%20e%20preciso%20de%20atendimento." target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-whatsapp-logo"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+
+    <figure class="hero__media">
+      <picture>
+        <source type="image/webp" srcset="img/abraco-480.webp 480w, img/abraco-774.webp 774w" sizes="(min-width: 1024px) 46vw, 100vw">
+        <img src="img/abraco-774.jpg" srcset="img/abraco-480.jpg 480w, img/abraco-774.jpg 774w" sizes="(min-width: 1024px) 46vw, 100vw" width="774" height="805" alt="Mãe idosa e filha adulta abraçadas, de olhos fechados, em uma sala iluminada pelo sol." fetchpriority="high">
+      </picture>
+      <img class="hero__dove" src="img/pomba-branca.png" alt="" width="404" height="480" aria-hidden="true">
+      <figcaption class="hero__caption">Homenageando histórias de vida há mais de uma década.</figcaption>
+    </figure>
+  </section>
+
+  <!-- Intent router -->
+  <nav class="router" aria-labelledby="router-title">
+    <div class="container">
+      <h2 id="router-title" class="router__title">Como podemos ajudar <em>agora?</em></h2>
+      <ul class="router__grid">
+        <li>
+          <a class="route route--urgent" href="#agora">
+            <span class="route__label">Alguém faleceu</span>
+            <span class="route__hint">O que fazer nas próximas horas</span>
+            <svg class="icon route__arrow" aria-hidden="true"><use href="#i-arrow-down-right"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="route" href="#planos">
+            <span class="route__label">Quero me planejar</span>
+            <span class="route__hint">Monte o plano da sua família</span>
+            <svg class="icon route__arrow" aria-hidden="true"><use href="#i-arrow-down-right"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="route" href="#pax-pet">
+            <span class="route__label">Meu pet</span>
+            <span class="route__hint">Cuidado em vida e despedida</span>
+            <svg class="icon route__arrow" aria-hidden="true"><use href="#i-arrow-down-right"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="route" href="#unidades">
+            <span class="route__label">Onde estamos</span>
+            <span class="route__hint">Seis cidades, 24 horas</span>
+            <svg class="icon route__arrow" aria-hidden="true"><use href="#i-arrow-down-right"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Alguém faleceu: guia interativo -->
+  <section class="guide section" id="agora" aria-labelledby="guide-title">
+    <div class="container guide__grid">
+      <header class="guide__head">
+        <h2 id="guide-title">Perdeu alguém? Vamos por partes.</h2>
+        <p>Diante da perda, é natural se sentir sem direção. Este roteiro ajuda a organizar os primeiros passos. Marque o que já foi feito; a lista fica salva só neste aparelho.</p>
+        <div class="guide__progress" aria-live="polite">
+          <span class="guide__bar"><span class="guide__fill" data-guide-fill></span></span>
+          <span data-guide-count>0 de 7 passos</span>
+        </div>
+        <button class="btn btn--line btn--sm guide__print" type="button" data-print>
+          <svg class="icon" aria-hidden="true"><use href="#i-printer"/></svg>
+          Imprimir roteiro
+        </button>
+      </header>
+
+      <div class="guide__steps" data-guide>
+        <fieldset class="phase">
+          <legend><span class="phase__when">Agora</span> Primeiros minutos</legend>
+          <label class="check"><input type="checkbox" data-step="respirar"><span class="check__box" aria-hidden="true"></span><span><strong>Respire e chame alguém de confiança.</strong> Você não precisa resolver tudo sozinho.</span></label>
+          <label class="check"><input type="checkbox" data-step="ligar"><span class="check__box" aria-hidden="true"></span><span><strong>Ligue para o plantão: <a href="tel:+551936571645">(19) 3657-1645</a>.</strong> Atendemos 24 horas, inclusive fins de semana e feriados.</span></label>
+          <label class="check"><input type="checkbox" data-step="plano"><span class="check__box" aria-hidden="true"></span><span><strong>Se houver plano, avise que é associado.</strong> Nossa equipe localiza o cadastro.</span></label>
+        </fieldset>
+
+        <fieldset class="phase">
+          <legend><span class="phase__when">Nas próximas horas</span> Documentos e escolhas</legend>
+          <label class="check"><input type="checkbox" data-step="documentos"><span class="check__box" aria-hidden="true"></span><span><strong>Separe os documentos.</strong> Em geral, o cartório pede a declaração de óbito emitida pelo médico, documento de identidade e CPF da pessoa falecida, certidão de nascimento ou casamento e o documento de quem vai declarar. Nossa equipe confirma o que é preciso no seu caso.</span></label>
+          <label class="check"><input type="checkbox" data-step="despedida"><span class="check__box" aria-hidden="true"></span><span><strong>Conte como a família quer a despedida.</strong> Velório, religião, sepultamento ou cremação: organizamos conforme a vontade de vocês.</span></label>
+        </fieldset>
+
+        <fieldset class="phase">
+          <legend><span class="phase__when">Depois</span> Homenagem e cuidado</legend>
+          <label class="check"><input type="checkbox" data-step="homenagem"><span class="check__box" aria-hidden="true"></span><span><strong>Pense na homenagem.</strong> Uma coroa de flores é uma forma delicada de se despedir.</span></label>
+          <label class="check"><input type="checkbox" data-step="cuidar"><span class="check__box" aria-hidden="true"></span><span><strong>Cuide de você.</strong> Buscar apoio durante o luto é um ato de coragem. Conversar e ser ouvido faz diferença.</span></label>
+        </fieldset>
+      </div>
+    </div>
+  </section>
+
+  <!-- Simulador de plano -->
+  <section class="planner section" id="planos" aria-labelledby="planner-title">
+    <div class="container">
+      <header class="planner__head">
+        <h2 id="planner-title">Monte a proteção da sua <em>família.</em></h2>
+        <p>No Plano Familiar Pax não há limite de idade nem exigência de vínculo familiar. Adicione quem você quer proteger e veja como fica.</p>
+      </header>
+
+      <div class="planner__grid">
+        <div class="builder">
+          <div class="builder__row">
+            <label for="add-person">Adicionar pessoa</label>
+            <div class="builder__control">
+              <select id="add-person">
+                <option>Cônjuge</option>
+                <option>Filho ou filha</option>
+                <option>Mãe</option>
+                <option>Pai</option>
+                <option>Avó ou avô</option>
+                <option>Sogra ou sogro</option>
+                <option>Irmão ou irmã</option>
+                <option>Neto ou neta</option>
+                <option>Amigo ou amiga</option>
+                <option>Outra pessoa querida</option>
+              </select>
+              <button class="btn btn--solid btn--sm" type="button" data-add="person">
+                <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="builder__row">
+            <label for="add-pet">Adicionar pet</label>
+            <div class="builder__control">
+              <select id="add-pet">
+                <option>Cachorro</option>
+                <option>Gato</option>
+                <option>Outro pet</option>
+              </select>
+              <button class="btn btn--solid btn--sm" type="button" data-add="pet">
+                <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
+                Adicionar
+              </button>
+            </div>
+          </div>
+
+          <div class="family" aria-live="polite">
+            <p class="family__label">Sua família no plano</p>
+            <ul class="family__list" data-family>
+              <li class="chip chip--fixed"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg>Você (titular)</li>
+            </ul>
+            <p class="family__limits"><span data-count-people>0 de 11 dependentes</span><span data-count-pets>0 de 3 pets</span></p>
+            <p class="family__msg" data-family-msg hidden></p>
+          </div>
+
+          <label class="switch">
+            <input type="checkbox" data-transfer>
+            <span class="switch__track" aria-hidden="true"><span class="switch__thumb"></span></span>
+            <span>Já tenho plano funerário em outra empresa</span>
+          </label>
+        </div>
+
+        <aside class="receipt" aria-labelledby="receipt-title">
+          <h3 id="receipt-title">Plano Familiar Pax</h3>
+          <p class="receipt__price"><span class="receipt__value">R$ 49,90</span><span>por mês, para <strong data-total>1 pessoa</strong></span></p>
+          <dl class="receipt__terms">
+            <div><dt>Carência</dt><dd data-term-carencia>90 dias</dd></div>
+            <div><dt>Taxa de adesão</dt><dd data-term-taxa>Consulte nossos atendentes</dd></div>
+            <div><dt>Quilometragem</dt><dd>Livre em todo o estado de São Paulo</dd></div>
+          </dl>
+          <ul class="receipt__perks">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg>Assistência funerária completa</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg>Descontos em consultas, exames, farmácias e advogados</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg>Empréstimo de cadeira de banho, muletas e andador</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check-circle"/></svg>Pets com descontos e cremação coletiva</li>
+          </ul>
+          <a class="btn btn--solid btn--block" href="https://wa.me/551936571645" target="_blank" rel="noopener" data-plan-cta>
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp-logo"/></svg>
+            Enviar minha família pelo WhatsApp
+          </a>
+          <p class="receipt__note">Temos também outra opção de plano familiar: consulte nossos atendentes. Se preferir, venha tomar um café com a gente.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pax Pet -->
+  <section class="pet section" id="pax-pet" aria-labelledby="pet-title">
+    <div class="container pet__grid">
+      <div class="pet__copy">
+        <h2 id="pet-title">Amor de quatro patas também é <em>família.</em></h2>
+        <p>Quem sempre deu amor sem pedir nada em troca merece cuidado em vida e uma despedida à altura. Nossa equipe tem formação em tanatopraxia pet e atende 24 horas, com plano ou em atendimento particular.</p>
+        <a class="btn btn--solid" href="https://wa.me/551936571645?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20Pax%20Pet." target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-whatsapp-logo"/></svg>
+          Falar sobre a Pax Pet
+        </a>
+      </div>
+      <div class="pet__panels">
+        <article class="pet-panel">
+          <svg class="pet-panel__icon" aria-hidden="true"><use href="#i-dog"/></svg>
+          <h3>Na vida</h3>
+          <p>Até 3 pets no Plano Familiar Pax, com descontos na rede de clínicas e espaços parceiros: consultas, exames, vacinas, medicamentos, banho, tosa e hotelzinho.</p>
+        </article>
+        <article class="pet-panel pet-panel--deep">
+          <svg class="pet-panel__icon" aria-hidden="true"><use href="#i-cat"/></svg>
+          <h3>Na despedida</h3>
+          <p>Remoção com cuidado, cremação individual ou coletiva em crematório pet parceiro, devolução das cinzas em urna personalizada e acolhimento para a família.</p>
+          <p class="pet-panel__price">Valores: consulte nossos atendentes.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section class="services section" id="servicos" aria-labelledby="servicos-title">
+    <div class="container services__grid">
+      <div class="services__aside">
+        <h2 id="servicos-title">Cada detalhe da despedida, <em>com cuidado.</em></h2>
+        <p>Antes de qualquer serviço, existe uma família precisando ser ouvida, amparada e orientada. Explicamos cada etapa com tranquilidade e cuidamos de todos os detalhes com respeito.</p>
+        <a class="btn btn--line" href="tel:+551936571645">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+          Falar com o plantão
+        </a>
+      </div>
+
+      <ol class="index-list">
+        <li><details><summary><span class="index-list__name">Atendimento <span class="num">24</span> horas</span><svg class="icon" aria-hidden="true"><use href="#i-caret-down"/></svg></summary><p>Plantão todos os dias, inclusive fins de semana e feriados, pelo telefone (19) 3657-1645.</p></details></li>
+        <li><details><summary><span class="index-list__name">Remoção e translado</span><svg class="icon" aria-hidden="true"><use href="#i-caret-down"/></svg></summary><p>Transporte até a funerária e, depois, ao local do velório ou do sepultamento. A distância coberta varia conforme o plano.</p></details></li>
+        <li><details><summary><span class="index-list__name">Documentação</span><svg class="icon" aria-hidden="true"><use href="#i-caret-down"/></svg></summary><p>Orientação sobre os procedimentos e ajuda para obter os documentos necessários, incluindo a certidão de óbito.</p></details></li>
+        <li><details><summary><span class="index-list__name">Tanatopraxia</span><svg class="icon" aria-hidden="true"><use href="#i-caret-down"/></svg></summary><p>Preparação cuidadosa do corpo, que traz aparência serena e mais tempo para a despedida.</p></details></li>
+        <li><details><summary><span class="index-list__name">Velório</span><svg class="icon" aria-hidden="true"><use href="#i-caret-down"/></svg></summary><p>Capela velatória própria em Guaxupé. A cerimônia segue a religião ou a preferência da família, com cerimonialista ou líderes religiosos.</p></details></li>
+        <li><details><summary><span class="index-list__name">Urnas, jazigo e cremação</span><svg class="icon" aria-hidden="true"><use href="#i-caret-down"/></svg></summary><p>Explicamos cada opção com tranquilidade. Alguns itens já estão no plano; outros podem ser contratados à parte.</p></details></li>
+        <li><details><summary><span class="index-list__name">Coroas de flores</span><svg class="icon" aria-hidden="true"><use href="#i-caret-down"/></svg></summary><p>Uma forma delicada de prestar a última homenagem.</p></details></li>
+        <li><details><summary><span class="index-list__name">Placas memoriais</span><svg class="icon" aria-hidden="true"><use href="#i-caret-down"/></svg></summary><p>Em ACM ou porcelana, personalizadas com foto, nome e datas.</p></details></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Unidades com mapa -->
+  <section class="units section" id="unidades" aria-labelledby="unidades-title">
+    <div class="container">
+      <header class="units__head">
+        <h2 id="unidades-title">Seis cidades. Um plantão <em>que não dorme.</em></h2>
+        <p>Escolha a cidade para ver endereço, telefone e como chegar.</p>
+      </header>
+
+      <div class="units__grid">
+        <div class="map" aria-hidden="true">
+          <svg viewBox="0 0 1000 470" class="map__svg" focusable="false">
+            <g class="map__rings">
+              <circle cx="285" cy="112" r="100"/>
+              <circle cx="285" cy="112" r="200"/>
+              <circle cx="285" cy="112" r="400"/>
+            </g>
+            <g class="map__links">
+              <line x1="285" y1="112" x2="252" y2="253"/>
+              <line x1="285" y1="112" x2="129" y2="370"/>
+              <line x1="285" y1="112" x2="264" y2="425"/>
+              <line x1="285" y1="112" x2="546" y2="406"/>
+              <line x1="285" y1="112" x2="940" y2="436"/>
+            </g>
+            <g class="map__pins">
+              <g class="pin" data-pin="guaxupe" transform="translate(285 112)"><circle r="16" class="pin__halo"/><circle r="7"/><text x="16" y="-14">Guaxupé</text></g>
+              <g class="pin" data-pin="tapiratiba" transform="translate(252 253)"><circle r="16" class="pin__halo"/><circle r="7"/><text x="16" y="-12">Tapiratiba</text></g>
+              <g class="pin" data-pin="sjrp" transform="translate(129 370)"><circle r="16" class="pin__halo"/><circle r="7"/><text x="16" y="-12">São José do Rio Pardo</text></g>
+              <g class="pin" data-pin="divinolandia" transform="translate(264 425)"><circle r="16" class="pin__halo"/><circle r="7"/><text x="16" y="40">Divinolândia</text></g>
+              <g class="pin" data-pin="botelhos" transform="translate(546 406)"><circle r="16" class="pin__halo"/><circle r="7"/><text x="16" y="-12">Botelhos</text></g>
+              <g class="pin" data-pin="machado" transform="translate(940 436)"><circle r="16" class="pin__halo"/><circle r="7"/><text x="-16" y="-14" text-anchor="end">Machado</text></g>
+            </g>
+          </svg>
+          <p class="map__note">Posição aproximada das cidades atendidas.</p>
+        </div>
+
+        <div class="unit-picker">
+          <div class="unit-tabs" role="tablist" aria-label="Cidades atendidas">
+            <button role="tab" id="tab-guaxupe" aria-controls="panel-guaxupe" aria-selected="true" data-unit="guaxupe">Guaxupé</button>
+            <button role="tab" id="tab-tapiratiba" aria-controls="panel-tapiratiba" aria-selected="false" tabindex="-1" data-unit="tapiratiba">Tapiratiba</button>
+            <button role="tab" id="tab-sjrp" aria-controls="panel-sjrp" aria-selected="false" tabindex="-1" data-unit="sjrp">S. J. do Rio Pardo</button>
+            <button role="tab" id="tab-divinolandia" aria-controls="panel-divinolandia" aria-selected="false" tabindex="-1" data-unit="divinolandia">Divinolândia</button>
+            <button role="tab" id="tab-botelhos" aria-controls="panel-botelhos" aria-selected="false" tabindex="-1" data-unit="botelhos">Botelhos</button>
+            <button role="tab" id="tab-machado" aria-controls="panel-machado" aria-selected="false" tabindex="-1" data-unit="machado">Machado</button>
+          </div>
+
+          <article class="unit-panel" role="tabpanel" id="panel-guaxupe" aria-labelledby="tab-guaxupe">
+            <h3>Guaxupé <span class="uf">MG</span></h3>
+            <p class="unit-panel__sub">Funerária e capela velatória</p>
+            <p>Av. Dona Floriana, 66, Centro<br>Guaxupé-MG, 37800-000</p>
+            <p><a class="unit-panel__phone" href="tel:+5535988112852">(35) 98811-2852</a></p>
+            <p class="unit-panel__hours"><span class="live-dot" aria-hidden="true"></span>Aberto 24 horas, todos os dias</p>
+            <a class="btn btn--line btn--sm" href="https://maps.google.com/?cid=10318236687066624085" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-navigation-arrow"/></svg>Como chegar</a>
+          </article>
+          <article class="unit-panel" role="tabpanel" id="panel-tapiratiba" aria-labelledby="tab-tapiratiba" hidden>
+            <h3>Tapiratiba <span class="uf">SP</span></h3>
+            <p class="unit-panel__sub">Matriz do Grupo Pax</p>
+            <p>Rua Caconde, 159, Centro<br>Tapiratiba-SP, 13760-000</p>
+            <p><a class="unit-panel__phone" href="tel:+551936571645">(19) 3657-1645</a></p>
+            <p class="unit-panel__hours"><span class="live-dot" aria-hidden="true"></span>Aberto 24 horas</p>
+            <a class="btn btn--line btn--sm" href="https://maps.google.com/?cid=15442840601589961927" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-navigation-arrow"/></svg>Como chegar</a>
+          </article>
+          <article class="unit-panel" role="tabpanel" id="panel-sjrp" aria-labelledby="tab-sjrp" hidden>
+            <h3>São José do Rio Pardo <span class="uf">SP</span></h3>
+            <p class="unit-panel__sub">Unidade Grupo Pax</p>
+            <p>R. Cândido Faria, 229, Centro<br>São José do Rio Pardo-SP, 13720-000</p>
+            <p><a class="unit-panel__phone" href="tel:+5519983389779">(19) 98338-9779</a></p>
+            <p class="unit-panel__hours"><span class="live-dot" aria-hidden="true"></span>Aberto 24 horas</p>
+            <a class="btn btn--line btn--sm" href="https://maps.google.com/?cid=18204312528144402007" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-navigation-arrow"/></svg>Como chegar</a>
+          </article>
+          <article class="unit-panel" role="tabpanel" id="panel-divinolandia" aria-labelledby="tab-divinolandia" hidden>
+            <h3>Divinolândia <span class="uf">SP</span></h3>
+            <p class="unit-panel__sub">Unidade Grupo Pax</p>
+            <p>Praça Nossa Senhora do Rosário, 30, Centro<br>Divinolândia-SP, 13780-000</p>
+            <p><a class="unit-panel__phone" href="tel:+551936571645">(19) 3657-1645</a></p>
+            <p class="unit-panel__hours"><span class="live-dot" aria-hidden="true"></span>Aberto 24 horas</p>
+            <a class="btn btn--line btn--sm" href="https://maps.google.com/?cid=14780968741551569630" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-navigation-arrow"/></svg>Como chegar</a>
+          </article>
+          <article class="unit-panel" role="tabpanel" id="panel-botelhos" aria-labelledby="tab-botelhos" hidden>
+            <h3>Botelhos <span class="uf">MG</span></h3>
+            <p class="unit-panel__sub">Cidade atendida</p>
+            <p>Para endereço e atendimento local, consulte nossos atendentes.</p>
+            <p><a class="unit-panel__phone" href="tel:+551936571645">(19) 3657-1645</a></p>
+            <p class="unit-panel__hours"><span class="live-dot" aria-hidden="true"></span>Plantão 24 horas</p>
+          </article>
+          <article class="unit-panel" role="tabpanel" id="panel-machado" aria-labelledby="tab-machado" hidden>
+            <h3>Machado <span class="uf">MG</span></h3>
+            <p class="unit-panel__sub">Cidade atendida</p>
+            <p>Para endereço e atendimento local, consulte nossos atendentes.</p>
+            <p><a class="unit-panel__phone" href="tel:+551936571645">(19) 3657-1645</a></p>
+            <p class="unit-panel__hours"><span class="live-dot" aria-hidden="true"></span>Plantão 24 horas</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="about section" id="sobre" aria-labelledby="sobre-title">
+    <figure class="about__figure">
+      <picture>
+        <source type="image/webp" srcset="img/familia-640.webp 640w, img/familia-1105.webp 1105w" sizes="100vw">
+        <img src="img/familia-1105.jpg" srcset="img/familia-640.jpg 640w, img/familia-1105.jpg 1105w" sizes="100vw" width="1105" height="382" loading="lazy" decoding="async" alt="Família de três gerações reunida no sofá: avó, filhos e netos abraçados e sorrindo.">
+      </picture>
+    </figure>
+    <div class="container about__grid">
+      <div class="about__copy">
+        <h2 id="sobre-title">Presença que acolhe, <em>cuidado que permanece.</em></h2>
+        <p>O Grupo Pax Assistência Funeral nasceu em Tapiratiba-SP e hoje cuida de famílias em seis cidades de São Paulo e do Sul de Minas. Mais do que prestar um serviço, acolhemos histórias, respeitamos memórias e homenageamos vidas que deixaram amor, ensinamentos e saudade.</p>
+      </div>
+      <ol class="years" aria-label="Nossa trajetória">
+        <li><span>2015</span><p>Início em Tapiratiba-SP, nossa matriz.</p></li>
+        <li><span>2019</span><p>Chegada a Guaxupé-MG.</p></li>
+        <li><span>2024</span><p>Nova capela velatória em Guaxupé.</p></li>
+        <li><span>2025</span><p>Sexta unidade, em São José do Rio Pardo, e veículo próprio para pets.</p></li>
+        <li><span>2026</span><p>Equipe formada em tanatopraxia pet e novas parcerias de saúde.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq section" id="duvidas" aria-labelledby="faq-title">
+    <div class="container faq__grid">
+      <h2 id="faq-title">Dúvidas <em>frequentes</em></h2>
+      <div class="faq__list">
+        <details><summary>Qual o primeiro passo quando alguém da família falece?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Ligue para o plantão 24 horas: <a href="tel:+551936571645">(19) 3657-1645</a>. Nossa equipe orienta sobre os documentos e cuida da remoção, da preparação, do velório e do sepultamento ou da cremação.</p></details>
+        <details><summary>Qual é a carência do Plano Familiar Pax?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>A carência é de 90 dias. Para quem transfere o plano de outra empresa, não há carência nem taxa de adesão.</p></details>
+        <details><summary>O plano funerário tem limite de idade?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Não. O Plano Familiar Pax não tem limite de idade e não exige vínculo familiar: você escolhe quem deseja proteger.</p></details>
+        <details><summary>Quantas pessoas o plano cobre e quanto custa?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>1 titular e até 11 dependentes, além de até 3 pets, por R$ 49,90 por mês.</p></details>
+        <details><summary>Posso trazer meu plano de outra funerária?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Sim. Na transferência de plano não há carência nem taxa de adesão.</p></details>
+        <details><summary>Vocês fazem cremação?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Sim. A cremação pode estar incluída no plano ou ser contratada à parte. Para pets, oferecemos cremação individual ou coletiva, com devolução das cinzas em urna personalizada.</p></details>
+        <details><summary>Onde fica a funerária em Guaxupé?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary><p>Na Av. Dona Floriana, 66, Centro, Guaxupé-MG, com capela velatória própria e atendimento 24 horas.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato final -->
+  <section class="closing" id="contato" aria-labelledby="closing-title">
+    <img class="closing__dove" src="img/pomba-branca.png" alt="" width="404" height="480" loading="lazy" aria-hidden="true">
+    <div class="container closing__inner">
+      <h2 id="closing-title">Estamos aqui, <em>a qualquer hora.</em></h2>
+      <a class="closing__phone" href="tel:+551936571645">(19) 3657-1645</a>
+      <ul class="closing__links">
+        <li><a href="https://wa.me/551936571645?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Funer%C3%A1ria%20Pax%20Guaxup%C3%A9." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp-logo"/></svg>WhatsApp (19) 3657-1645</a></li>
+        <li><a href="https://wa.me/5519983389779?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20do%20Grupo%20Pax." target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp-logo"/></svg>Planos (19) 98338-9779</a></li>
+        <li><a href="tel:+5535988112852"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Guaxupé (35) 98811-2852</a></li>
+        <li><a href="mailto:notafuneralgrupopax@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-envelope-simple"/></svg>notafuneralgrupopax@gmail.com</a></li>
+        <li><a href="https://www.instagram.com/grupopaxassistenciafuneral/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram-logo"/></svg>Instagram</a></li>
+        <li><a href="https://www.facebook.com/funeraria.guaxupe/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook-logo"/></svg>Facebook</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div>
+      <picture>
+        <source srcset="img/logo-pax-branco.webp" type="image/webp">
+        <img class="footer__logo" src="img/logo-pax-branco.png" alt="Grupo Pax Assistência Funeral" width="585" height="240" loading="lazy" decoding="async">
+      </picture>
+    </div>
+    <p>Grupo Pax Assistência Funeral<br>Nome fantasia: Regional Pax<br>CNPJ <span class="nowrap">22.164.662/0001-30</span> (matriz)<br>Rua Caconde, 159, Centro, Tapiratiba-SP</p>
+    <p><a href="politica-de-privacidade.html">Política de privacidade</a><br><button class="link-button" type="button" data-open-cookies>Preferências de cookies</button><br>© <span data-year>2026</span> Grupo Pax</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/551936571645?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20Funer%C3%A1ria%20Pax%20Guaxup%C3%A9%20e%20preciso%20de%20atendimento." target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">
+  <svg class="icon" aria-hidden="true"><use href="#i-whatsapp-logo"/></svg>
+</a>
+
+<div class="cookie-card" id="cookie-card" role="region" aria-label="Aviso de privacidade" hidden>
+  <p>Guardamos só suas preferências neste aparelho. Nada vai para terceiros. <a href="politica-de-privacidade.html">Privacidade</a></p>
+  <button class="btn btn--solid btn--sm" type="button" data-cookie-ok>Ok</button>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
